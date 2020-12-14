@@ -10,10 +10,18 @@ show parms;
 
 load_data:{[parms] data:(parms`regions)!get each .file.makepath[parms`datapath] each parms`regions};
 load_census_data:{[parms] 
-   pop:("SSSSSSI",15#"F";1#csv)0: .file.makepath[parms[`datapath];`censusPopulation.csv];
+   pop:("SSSSSSI",55#"F";1#csv)0: .file.makepath[parms[`datapath];`censusPopulation.csv];
    pop:.tbl.rename[pop;cols[pop];lower each cols[pop]];
+   cp:cols pop;
+   pop:(`state,(cp where cp like "popestimate*"),(cp where cp like "death*"))#pop;
    pop}
   
+compute_death_rates:{[pop;parms]
+   pstk:.tbl.stack[pop;`state;`;`];
+   pstks:0!.tbl.split[update year:{"I"$-4#string x}each parmf,qty:?[parmf like "popest*";`population;`deaths] from pstk;`state`year;`qty;`valf];
+   dthrate:update deathrate:valf_deaths%valf_population from pstks;
+   dthrate};
+
 main:{[parms]
   data:load_data[parms];
   
@@ -23,11 +31,17 @@ main:{[parms]
   tbl:update dailyDeath7:mavg[7;dailyDeath] by state from tbl;
   
   pop:load_census_data[parms];
-  pop2019:update pop:popestimate2019 from pop;
-  tbl:tbl lj select last pop by state from pop2019;
-  tbl:update deathrate7:dailyDeath7%pop from tbl;
-
+  dthrate:compute_death_rates[pop;parms];
+  pop:pop lj select annual_deathrate:avg[deathrate] by state from dthrate;
+  pop:update pop:popestimate2019 from pop;
+  tbl:tbl lj select last pop,last annual_deathrate by state from pop;
+  tbl:update ann_covid_deathrate:365*dailyDeath7%pop from tbl;
+  -1 "Worst day of covid deaths by state, annualized, and compared with the average death rate for the state";
+  -1 `frac_covid xdesc update frac_covid:ann_covid_deathrate%annual_deathrate from select from tbl where ann_covid_deathrate=(max;ann_covid_deathrate) fby state;
  
+  tt:update covid_frac:ann_covid_death%annual_deathrate from update ann_covid_death:dailyDeath*N%365 from select sum[dailyDeath%pop],N:count[i],avg[annual_deathrate] by state from tbl;
+  .graph.xyt[tt;();0b;`state`covid_frac;(`title;"Excess Covid Deaths by State";`xsort;0b)];
+
   .graph.xyt[tbl;"state<>`us,state in `NY`CA`TX`WA`IL`NC";`state;`date`dailyDeath7;`]
 
   }
