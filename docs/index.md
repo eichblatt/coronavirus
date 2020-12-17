@@ -4,3 +4,5 @@ The files in this repo use my kdb library to download daily coronavirus data by 
 I did this mostly as a way to build up the kdb library's functionality as I asked questions of the data.
 
 See the daily [report] (death_trends.svg)
+ ![Alt text](./death_trends.svg)
+    <img src="./death_trends.svg">
