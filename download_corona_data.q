@@ -1,14 +1,11 @@
 
-c:.opts.addopt[`;`debug;1b;"debug"];
+c:.opts.addopt[`;`debug;0b;"debug"];
 c:.opts.addopt[c;`datapath;.file.makepath[`:/home/steve;"projects/coronavirus/data"];"data path"];
 c:.opts.addopt[c;`data_api;"https://api.covidtracking.com";"link to data api"];
 c:.opts.addopt[c;`regions;`us`states;"valid regions to query"];
 c:.opts.addopt[c;`full_data;1b;"download all data, or just update"];
 parms:.opts.get_opts c;
 show parms;
-
-\l /home/steve/kdb/util/graph.q
-
 
 download_from_api:{[region;parms]
   optdict:.dict.kvd(`version;`v1;`region;region;`hist;$[parms[`full_data];`daily;`current]);
