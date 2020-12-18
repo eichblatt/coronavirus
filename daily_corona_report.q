@@ -41,17 +41,17 @@ make_plots:{[tbl;pop;parms]
   show `N xcols update N:1+i from `frac_covid xdesc update frac_covid:ann_covid_deathrate%annual_deathrate,pop:pop%1e6 from select from tbl where ann_covid_deathrate=(max;ann_covid_deathrate) fby state;
  
   tt:update covid_frac:ann_covid_death%annual_deathrate from update ann_covid_death:dailyDeath*N%365 from select sum[dailyDeath%pop],N:count[i],avg[annual_deathrate] by state from tbl;
-  graph_opts:(`title;"Excess Covid Deaths by State";`xsort;0b;`terminal;`svg;`size;"1200, 900";`output;"/home/steve/projects/coronavirus/reports/excess_by_state.svg");
+  graph_opts:(`title;"Excess Covid Deaths by State";`xsort;0b;`terminal;`svg;`size;"1200, 900";`output;"/home/steve/projects/coronavirus/docs/excess_by_state.svg");
   .graph.xyt[tt;();0b;`state`covid_frac;graph_opts];
 
-  graph_opts:(`terminal;`svg;`size;"800, 600";`output;"/home/steve/projects/coronavirus/reports/death_trends.svg";`title;"Annualized Death Rate by State");
+  graph_opts:(`terminal;`svg;`size;"800, 600";`output;"/home/steve/projects/coronavirus/docs/death_trends.svg";`title;"Annualized Death Rate by State");
   .graph.xyt[tbl;"state in `us`NY`CA`TX`WV";`state;`date`ann_covid_deathrate;graph_opts];
-  graph_opts:(`terminal;`svg;`size;"400, 300";`output;"/home/steve/projects/coronavirus/reports/recent_death_trends.svg";`title;"Last 90 Days");
+  graph_opts:(`terminal;`svg;`size;"400, 300";`output;"/home/steve/projects/coronavirus/docs/recent_death_trends.svg";`title;"Last 90 Days");
   .graph.xyt[tbl;"state in `us`NY`CA`TX`WV,date>-90+.z.D";`state;`date`ann_covid_deathrate;graph_opts];
 
-  graph_opts:(`terminal;`svg;`size;"600, 450";`output;"/home/steve/projects/coronavirus/reports/most_increased.svg";`title;"Most Increased in last 10 Days");
+  graph_opts:(`terminal;`svg;`size;"600, 450";`output;"/home/steve/projects/coronavirus/docs/most_increased.svg";`title;"Most Increased in last 10 Days");
   .graph.xyt[select from tbl where state in 10#change_order;"date>-90+.z.D";`state;`date`ann_covid_deathrate;graph_opts];
-  graph_opts:(`terminal;`svg;`size;"600, 450";`output;"/home/steve/projects/coronavirus/reports/most_decreased.svg";`title;"Most Decreased in last 10 Days");
+  graph_opts:(`terminal;`svg;`size;"600, 450";`output;"/home/steve/projects/coronavirus/docs/most_decreased.svg";`title;"Most Decreased in last 10 Days");
   .graph.xyt[select from tbl where state in -10#change_order;"date>-90+.z.D";`state;`date`ann_covid_deathrate;graph_opts];
 
 /  pop_stack:update year:{"I"$-4#string x}'[parmf] from .tbl.stack[pop;`state;`;`]; 
