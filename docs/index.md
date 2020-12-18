@@ -16,5 +16,15 @@ I did this mostly as a way to build up the kdb library's functionality as I aske
  <img src="./most_decreased.svg">
  
  # [Excess Mortality](./excess_by_state.svg) 
+ Excess Mortality is defined as what fraction of the typical death rate is attrituable to the Covid 19. An excess mortality of 0.2 would mean that the 
+ death rate has increased by 20% due to Covid 19.
  <img src="./excess_by_state.svg">
  
+
+# About the Data
+
+The Covid death rates are annualized daily death per person in the population of the state or region. Eg. it is 365 * the daily death rate. 
+
+Daily Covid data for the United States from https://covidtracking.com/
+
+Population and non-covid death rates from https://www.census.gov/
