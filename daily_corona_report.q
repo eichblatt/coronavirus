@@ -46,7 +46,7 @@ make_plots:{[tbl;pop;parms]
 
   graph_opts:(`terminal;`svg;`size;"800, 600";`output;"/home/steve/projects/coronavirus/docs/death_trends.svg";`title;"Annualized Death Rate by State");
   .graph.xyt[tbl;"state in `us`NY`CA`TX`WV";`state;`date`ann_covid_deathrate;graph_opts];
-  graph_opts:(`terminal;`svg;`size;"400, 300";`output;"/home/steve/projects/coronavirus/docs/recent_death_trends.svg";`title;"Last 90 Days");
+  graph_opts:(`terminal;`svg;`size;"600, 450";`output;"/home/steve/projects/coronavirus/docs/recent_death_trends.svg";`title;"Last 90 Days");
   .graph.xyt[tbl;"state in `us`NY`CA`TX`WV,date>-90+.z.D";`state;`date`ann_covid_deathrate;graph_opts];
 
   graph_opts:(`terminal;`svg;`size;"600, 450";`output;"/home/steve/projects/coronavirus/docs/most_increased.svg";`title;"Most Increased in last 10 Days");
