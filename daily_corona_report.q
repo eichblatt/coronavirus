@@ -18,7 +18,7 @@ load_data:{[parms]
    data};
 
 load_census_data:{[parms] 
-   pop:("SSSSSSI",55#"F";1#csv)0: .file.makepath[parms[`datapath];`censusPopulation.csv];
+   pop:("IIISISI",55#"I";1#csv)0: .file.makepath[parms[`datapath];`censusPopulation.csv];
    pop:.tbl.rename[pop;cols[pop];lower each cols[pop]];
    cp:cols pop;
    pop:(`state,(cp where cp like "popestimate*"),(cp where cp like "death*"))#pop;
@@ -26,8 +26,8 @@ load_census_data:{[parms]
   
 compute_death_rates:{[pop;parms]
    pstk:.tbl.stack[pop;`state;`;`];
-   pstks:0!.tbl.split[update year:{"I"$-4#string x}each parmf,qty:?[parmf like "popest*";`population;`deaths] from pstk;`state`year;`qty;`valf];
-   dthrate:update deathrate:valf_deaths%valf_population from pstks;
+   pstks:0!.tbl.split[update year:{"I"$-4#string x}each parmi,qty:?[parmi like "popest*";`population;`deaths] from pstk;`state`year;`qty;`vali];
+   dthrate:update deathrate:vali_deaths%vali_population from pstks;
    dthrate};
 
 make_plots:{[tbl;pop;parms]
@@ -54,11 +54,11 @@ make_plots:{[tbl;pop;parms]
   graph_opts:(`terminal;`svg;`size;"600, 450";`output;"/home/steve/projects/coronavirus/docs/most_decreased.svg";`title;"Most Decreased in last 10 Days");
   .graph.xyt[select from tbl where state in -10#change_order;"date>-90+.z.D";`state;`date`ann_covid_deathrate;graph_opts];
 
-/  pop_stack:update year:{"I"$-4#string x}'[parmf] from .tbl.stack[pop;`state;`;`]; 
-/  pop_stack:update parmf:{`$-4_string x}'[parmf] from pop_stack;
-/  pop_stack:select from pop_stack where parmf in `popestimate`deaths;
-/  pop_split:0!.tbl.split[pop_stack;`state`year;`parmf;`valf];
-/  pop_split:update deathrate:valf_deaths%valf_popestimate from pop_split;
+/  pop_stack:update year:{"I"$-4#string x}'[parmi] from .tbl.stack[pop;`state;`;`]; 
+/  pop_stack:update parmi:{`$-4_string x}'[parmi] from pop_stack;
+/  pop_stack:select from pop_stack where parmi in `popestimate`deaths;
+/  pop_split:0!.tbl.split[pop_stack;`state`year;`parmi;`vali];
+/  pop_split:update deathrate:vali_deaths%vali_popestimate from pop_split;
 /  .graph.xyt[`deathrate xdesc select avg deathrate by state from pop_split;();0b;`state`deathrate;(`xsort;0b)];
   };
 
