@@ -9,6 +9,12 @@ I did this mostly as a way to build up the kdb library's functionality as I aske
 # [Recent Death Trends](./recent_death_trends.svg)
  <img src="./recent_death_trends.svg">
  
+# [States With Highest Mortality](./worst10.svg) 
+ <img src="./worst10.svg">
+
+# [States With Lowest Mortality](./best10.svg) 
+ <img src="./best10.svg">
+
 # [States With Most Increased Mortality](./most_increased.svg) 
  <img src="./most_increased.svg">
  
@@ -29,4 +35,5 @@ Daily Covid data for the United States from [https://covidtracking.com/](https:/
 
 Population and non-covid death rates from [the US census website](https://www.census.gov/programs-surveys/popest.html)
 
-Report Updated at 2021.01.05 15:36:21 EST
+
+Report Updated at 2021.01.05 15:50:37 EST

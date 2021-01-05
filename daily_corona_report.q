@@ -38,7 +38,9 @@ make_plots:{[tbl;pop;parms]
   tbl:tbl lj select last pop,last annual_deathrate by state from pop;
   tbl:update ann_covid_deathrate:365*dailyDeath7%pop from tbl;
   tbl:update recent_change:ann_covid_deathrate-prev_dr from update prev_dr:xprev[10;ann_covid_deathrate] by state from tbl;
+  tbl:update relative_deathrate:ann_covid_deathrate%annual_deathrate from tbl;
   change_order:exec state from `recent_change xdesc select from tbl where date=max date, not null recent_change;
+  level_order:exec state from `relative_deathrate xdesc select from tbl where date=max date, not null relative_deathrate;
  
   .log.info "Worst day of covid deaths by state, annualized, and compared with the average death rate for the state";
   show `N xcols update N:1+i from `frac_covid xdesc update frac_covid:ann_covid_deathrate%annual_deathrate,pop:pop%1e6 from select from tbl where ann_covid_deathrate=(max;ann_covid_deathrate) fby state;
@@ -57,6 +59,11 @@ make_plots:{[tbl;pop;parms]
   graph_opts:(`terminal;`svg;`size;"600, 450";`output;docfile["most_decreased.svg";parms];`title;"Most Decreased in last 10 Days");
   .graph.xyt[select from tbl where state in -10#change_order;"date>-90+.z.D";`state;`date`ann_covid_deathrate;graph_opts];
 
+  graph_opts:(`terminal;`svg;`size;"600, 450";`output;docfile["worst10.svg";parms];`title;"Top 10 deatrates, latest 10 Days");
+  .graph.xyt[select from tbl where state in 10#level_order;"date>-90+.z.D";`state;`date`ann_covid_deathrate;graph_opts];
+  graph_opts:(`terminal;`svg;`size;"600, 450";`output;docfile["best10.svg";parms];`title;"Bottom 10 deatrates, latest 10 Days");
+  .graph.xyt[select from tbl where state in -10#level_order;"date>-90+.z.D";`state;`date`ann_covid_deathrate;graph_opts];
+
 /  pop_stack:update year:{"I"$-4#string x}'[parmi] from .tbl.stack[pop;`state;`;`]; 
 /  pop_stack:update parmi:{`$-4_string x}'[parmi] from pop_stack;
 /  pop_stack:select from pop_stack where parmi in `popestimate`deaths;
@@ -66,8 +73,11 @@ make_plots:{[tbl;pop;parms]
   };
 
 update_report:{[parms]
+  basepath:docfile["index_base.md";parms];
   reportpath:docfile["index.md";parms];
   updatestring:.string.format["Report Updated at %dt% %tm% EST";(`dt;.z.D;`tm;"v"$.z.Z)];
+  cmd:.string.format["cp %bp% %rp%";(`bp;basepath;`rp;reportpath)];
+  system cmd;
   cmd:.string.format["echo \"%uds%\" >> %rp% &";(`uds;updatestring;`rp;reportpath)];
   system cmd;
   }
