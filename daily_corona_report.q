@@ -59,9 +59,9 @@ make_plots:{[tbl;pop;parms]
   graph_opts:(`terminal;`svg;`size;"600, 450";`output;docfile["most_decreased.svg";parms];`title;"Most Decreased in last 10 Days");
   .graph.xyt[select from tbl where state in -10#change_order;"date>-90+.z.D";`state;`date`ann_covid_deathrate;graph_opts];
 
-  graph_opts:(`terminal;`svg;`size;"600, 450";`output;docfile["worst10.svg";parms];`title;"Top 10 deatrates, latest 10 Days");
+  graph_opts:(`terminal;`svg;`size;"600, 450";`output;docfile["worst10.svg";parms];`title;"Top 10 Current Death Rates");
   .graph.xyt[select from tbl where state in 10#level_order;"date>-90+.z.D";`state;`date`ann_covid_deathrate;graph_opts];
-  graph_opts:(`terminal;`svg;`size;"600, 450";`output;docfile["best10.svg";parms];`title;"Bottom 10 deatrates, latest 10 Days");
+  graph_opts:(`terminal;`svg;`size;"600, 450";`output;docfile["best10.svg";parms];`title;"Bottom 10 Current Death Rates");
   .graph.xyt[select from tbl where state in -10#level_order;"date>-90+.z.D";`state;`date`ann_covid_deathrate;graph_opts];
 
 /  pop_stack:update year:{"I"$-4#string x}'[parmi] from .tbl.stack[pop;`state;`;`]; 
