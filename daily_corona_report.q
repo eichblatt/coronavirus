@@ -8,6 +8,7 @@ show parms;
 
 \l /home/steve/kdb/util/graph.q
 
+system["c 23 230"];
 
 load_data:{[parms] 
    data:(parms`regions)!get each .file.makepath[parms`datapath] each parms`regions;
@@ -33,43 +34,42 @@ compute_death_rates:{[pop;parms]
 
 docfile:{[fname;parms].file.name .file.makepath[parms[`docpath];fname]};
 
-make_plots:{[tbl;pop;parms]
+state_table:{[tbl;pop;parms];
+  state:tbl lj select last pop,last annual_deathrate by state from pop;
+  state:update ann_covid_deathrate:365*dailyDeath7%pop from state;
+  state:update recent_change:ann_covid_deathrate-prev_dr from update prev_dr:xprev[10;ann_covid_deathrate] by state from state;
+  state:update relative_deathrate:ann_covid_deathrate%annual_deathrate,norm_death:death%pop from state;
+  state:update N:1+til count[i] by state from state;
+  state:update covid_frac:ann_covid_death%annual_deathrate from update ann_covid_death:norm_death*N%365 from state;
+  state};
+ 
+make_plots:{[state_tbl;parms]
 
-  tbl:tbl lj select last pop,last annual_deathrate by state from pop;
-  tbl:update ann_covid_deathrate:365*dailyDeath7%pop from tbl;
-  tbl:update recent_change:ann_covid_deathrate-prev_dr from update prev_dr:xprev[10;ann_covid_deathrate] by state from tbl;
-  tbl:update relative_deathrate:ann_covid_deathrate%annual_deathrate from tbl;
-  change_order:exec state from `recent_change xdesc select from tbl where date=(max;date) fby state, not null recent_change;
-  level_order:exec state from `relative_deathrate xdesc select from tbl where date=(max;date) fby state, not null relative_deathrate;
+  change_order:exec state from `recent_change xdesc select from state_tbl where date=(max;date) fby state, not null recent_change;
+  level_order:exec state from `relative_deathrate xdesc select from state_tbl where date=(max;date) fby state, not null relative_deathrate;
  
   .log.info "Worst day of covid deaths by state, annualized, and compared with the average death rate for the state";
-  show `N xcols update N:1+i from `frac_covid xdesc update frac_covid:ann_covid_deathrate%annual_deathrate,pop:pop%1e6 from select from tbl where ann_covid_deathrate=(max;ann_covid_deathrate) fby state;
- 
-  tt:update covid_frac:ann_covid_death%annual_deathrate from update ann_covid_death:dailyDeath*N%365 from select sum[dailyDeath%pop],N:count[i],avg[annual_deathrate] by state from tbl;
+  show `N xcols update N:1+i from `frac_covid xdesc update frac_covid:pop:pop%1e6 from select from state_tbl where ann_covid_deathrate=(max;ann_covid_deathrate) fby state;
+
   graph_opts:(`title;"Excess Covid Deaths by State";`xsort;0b;`terminal;`svg;`size;"1200, 900";`output;docfile["excess_by_state.svg";parms]);
-  .graph.xyt[tt;();0b;`state`covid_frac;graph_opts];
+  tt:select state,date,excess_deaths:(N%365)*death%(annual_deathrate*pop) from state_tbl;
+  .graph.xyt[select by state from tt;"not null excess_deaths";0b;`state`excess_deaths;graph_opts];
 
   graph_opts:(`terminal;`svg;`size;"800, 600";`output;docfile["death_trends.svg";parms];`title;"Annualized Death Rate by State");
-  .graph.xyt[tbl;"state in `us`NY`CA`TX`WV";`state;`date`ann_covid_deathrate;graph_opts];
+  .graph.xyt[state_tbl;"state in `us`NY`CA`TX`WV";`state;`date`ann_covid_deathrate;graph_opts];
   graph_opts:(`terminal;`svg;`size;"600, 450";`output;docfile["recent_death_trends.svg";parms];`title;"Last 90 Days");
-  .graph.xyt[tbl;"state in `us`NY`CA`TX`WV,date>-90+.z.D";`state;`date`ann_covid_deathrate;graph_opts];
+  .graph.xyt[state_tbl;"state in `us`NY`CA`TX`WV,date>-90+.z.D";`state;`date`ann_covid_deathrate;graph_opts];
 
   graph_opts:(`terminal;`svg;`size;"900, 600";`output;docfile["most_increased.svg";parms];`title;"Most Increased in last 10 Days");
-  .graph.xyt[select from tbl where state in 13#change_order;"date>-90+.z.D";`state;`date`ann_covid_deathrate;graph_opts];
+  .graph.xyt[select from state_tbl where state in 13#change_order;"date>-90+.z.D";`state;`date`ann_covid_deathrate;graph_opts];
   graph_opts:(`terminal;`svg;`size;"900, 600";`output;docfile["most_decreased.svg";parms];`title;"Most Decreased in last 10 Days");
-  .graph.xyt[select from tbl where state in -13#change_order;"date>-90+.z.D";`state;`date`ann_covid_deathrate;graph_opts];
+  .graph.xyt[select from state_tbl where state in -13#change_order;"date>-90+.z.D";`state;`date`ann_covid_deathrate;graph_opts];
 
   graph_opts:(`terminal;`svg;`size;"900, 600";`output;docfile["worst10.svg";parms];`title;"Top 13 Current Death Rates");
-  .graph.xyt[select from tbl where state in 13#level_order;"date>-90+.z.D";`state;`date`ann_covid_deathrate;graph_opts];
+  .graph.xyt[select from state_tbl where state in 13#level_order;"date>-90+.z.D";`state;`date`ann_covid_deathrate;graph_opts];
   graph_opts:(`terminal;`svg;`size;"900, 600";`output;docfile["best10.svg";parms];`title;"Bottom 13 Current Death Rates");
-  .graph.xyt[select from tbl where state in -13#level_order;"date>-90+.z.D";`state;`date`ann_covid_deathrate;graph_opts];
+  .graph.xyt[select from state_tbl where state in -13#level_order;"date>-90+.z.D";`state;`date`ann_covid_deathrate;graph_opts];
 
-/  pop_stack:update year:{"I"$-4#string x}'[parmi] from .tbl.stack[pop;`state;`;`]; 
-/  pop_stack:update parmi:{`$-4_string x}'[parmi] from pop_stack;
-/  pop_stack:select from pop_stack where parmi in `popestimate`deaths;
-/  pop_split:0!.tbl.split[pop_stack;`state`year;`parmi;`vali];
-/  pop_split:update deathrate:vali_deaths%vali_popestimate from pop_split;
-/  .graph.xyt[`deathrate xdesc select avg deathrate by state from pop_split;();0b;`state`deathrate;(`xsort;0b)];
   };
 
 update_report:{[parms]
@@ -96,7 +96,8 @@ main:{[parms]
   pop:pop lj select annual_deathrate:avg[deathrate] by state from dthrate;
   pop:update pop:popestimate2019 from pop;
 
-  make_plots[tbl;pop;parms];
+  state_tbl:state_table[tbl;pop;parms];
+  make_plots[state_tbl;parms];
   update_report[parms];
   }
 
