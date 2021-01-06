@@ -56,9 +56,9 @@ make_plots:{[state_tbl;parms]
   .graph.xyt[select by state from tt;"not null excess_deaths";0b;`state`excess_deaths;graph_opts];
 
   graph_opts:(`terminal;`svg;`size;"800, 600";`output;docfile["death_trends.svg";parms];`title;"Annualized Death Rate by State");
-  .graph.xyt[state_tbl;"state in `us`NY`CA`TX`WV";`state;`date`ann_covid_deathrate;graph_opts];
+  .graph.xyt[state_tbl;"state in `us`NY`CA`TX`PA`HI`NJ";`state;`date`ann_covid_deathrate;graph_opts];
   graph_opts:(`terminal;`svg;`size;"600, 450";`output;docfile["recent_death_trends.svg";parms];`title;"Last 90 Days");
-  .graph.xyt[state_tbl;"state in `us`NY`CA`TX`WV,date>-90+.z.D";`state;`date`ann_covid_deathrate;graph_opts];
+  .graph.xyt[state_tbl;"state in `us`NY`CA`TX`PA`HI`NJ,date>-90+.z.D";`state;`date`ann_covid_deathrate;graph_opts];
 
   graph_opts:(`terminal;`svg;`size;"900, 600";`output;docfile["most_increased.svg";parms];`title;"Most Increased in last 10 Days");
   .graph.xyt[select from state_tbl where state in 13#change_order;"date>-90+.z.D";`state;`date`ann_covid_deathrate;graph_opts];
