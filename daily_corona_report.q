@@ -1,5 +1,5 @@
 
-c:.opts.addopt[`;`debug;1b;"debug"];
+c:.opts.addopt[`;`debug;0b;"debug"];
 c:.opts.addopt[c;`datapath;.file.makepath[`:/home/steve;"projects/coronavirus/data"];"data path"];
 c:.opts.addopt[c;`docpath;.file.makepath[`:/home/steve/projects/coronavirus/;"docs"];"docs path"];
 c:.opts.addopt[c;`regions;`us`states;"valid regions to query"];
