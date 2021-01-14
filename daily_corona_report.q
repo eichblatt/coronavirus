@@ -12,7 +12,7 @@ system["c 23 230"];
 
 load_data:{[parms] 
    data:(parms`regions)!get each .file.makepath[parms`datapath] each parms`regions;
-   maxdate:exec max date from data[first parms`regions];
+   maxdate:exec max date from data[first parms`regions] where not null death;
    repulled:0b;
    if[maxdate<-2+.z.D;system "q download_corona_data.q -full_data 1";repulled:1b];
    if[maxdate=-2+.z.D;system "q download_corona_data.q -full_data 0";repulled:1b];
@@ -55,10 +55,11 @@ make_plots:{[state_tbl;parms]
   tt:select state,date,excess_deaths:(N%365)*death%(annual_deathrate*pop) from state_tbl;
   .graph.xyt[select by state from tt;"not null excess_deaths";0b;`state`excess_deaths;graph_opts];
 
+  states_of_interest:distinct `us`NY`CA`TX`PA`HI`NJ,first level_order;
   graph_opts:(`terminal;`svg;`size;"800, 600";`output;docfile["death_trends.svg";parms];`title;"Annualized Death Rate by State");
-  .graph.xyt[state_tbl;"state in `us`NY`CA`TX`PA`HI`NJ";`state;`date`ann_covid_deathrate;graph_opts];
+  .graph.xyt[state_tbl;enlist(in;`state;enlist states_of_interest);`state;`date`ann_covid_deathrate;graph_opts];
   graph_opts:(`terminal;`svg;`size;"600, 450";`output;docfile["recent_death_trends.svg";parms];`title;"Last 90 Days");
-  .graph.xyt[state_tbl;"state in `us`NY`CA`TX`PA`HI`NJ,date>-90+.z.D";`state;`date`ann_covid_deathrate;graph_opts];
+  .graph.xyt[state_tbl;((in;`state;enlist states_of_interest);(>;`date;(-;.z.D;90)));`state;`date`ann_covid_deathrate;graph_opts];
 
   graph_opts:(`terminal;`svg;`size;"900, 600";`output;docfile["most_increased.svg";parms];`title;"Most Increased in last 10 Days");
   .graph.xyt[select from state_tbl where state in 13#change_order;"date>-90+.z.D";`state;`date`ann_covid_deathrate;graph_opts];

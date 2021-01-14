@@ -10,7 +10,8 @@ show parms;
 download_from_api:{[region;parms]
   optdict:.dict.kvd(`version;`v1;`region;region;`hist;$[parms[`full_data];`daily;`current]);
   url:.string.append[parms[`data_api];.string.format["/%version%/%region%/%hist%.csv";optdict]];
-  fmtstring:$[region~`us;"DIIIIIIIIIIIZIIIZIIIIIIIS";"DSIIIISIIIIIIIISZZZIIZIIIIIIIIIIII"];
+  /fmtstring:$[region~`us;"DIIIIIIIIIIIZIIIZIIIIIIIS";"DSIIIISIIIIIIIISZZZIIZIIIIIIIIIIII"];
+  fmtstring:$[region~`us;"DIIIIIIIIIIZIIIZIIIIIIIIS";"DSIIIISIIIIIIIISZZZIIZIIIIIIIIIIII"];
   request:"curl -s \"",url,"\"";
   t:(fmtstring;1#csv)0: system request;
   t}
