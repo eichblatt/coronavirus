@@ -12,6 +12,8 @@ system["c 23 230"];
 
 load_data:{[parms] 
    data:(parms`regions)!get each .file.makepath[parms`datapath] each parms`regions;
+   country_data:.file.get .file.makepath[parms`datapath;"countries_history"];
+   data[`countries]:country_data;
    maxdate:exec max date from data[first parms`regions] where not null death;
    repulled:0b;
    if[maxdate<-2+.z.D;system "q download_corona_data.q -full_data 1; sleep 8";repulled:1b];

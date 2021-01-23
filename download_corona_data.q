@@ -42,6 +42,7 @@ save_data:{[t;region;parms]
     
   
 main:{[parms]
+  country_data:download_country_data[parms];
   raw_data:(parms`regions)!download_from_api[;parms] each parms[`regions];
   save_data[raw_data;;parms] each key raw_data;
   }
