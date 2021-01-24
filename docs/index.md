@@ -45,7 +45,9 @@ The Covid death rates are annualized daily death per person in the population of
 
 Daily Covid data for the United States from [https://covidtracking.com/](https://covidtracking.com)
 
-Population and non-covid death rates from [the US census website](https://www.census.gov/programs-surveys/popest.html)
+US Population and non-covid death rates from [the US census website](https://www.census.gov/programs-surveys/popest.html)
+
+World Population covid death rates from [corona-api.com](https://corona-api.com/countries)
 
 
 Report Updated at 2021.01.24 18:38:13 EST
