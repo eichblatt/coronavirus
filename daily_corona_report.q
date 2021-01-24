@@ -13,7 +13,7 @@ system["c 23 230"];
 load_data:{[parms] 
    data:(parms`regions)!get each .file.makepath[parms`datapath] each parms`regions;
    country_data:.file.get .file.makepath[parms`datapath;"countries_history"];
-   data[`countries]:country_data;
+   data[`countries]:update country:`Korea from country_data where country like "Korea*";
    maxdate:exec max date from data[first parms`regions] where not null death;
    repulled:0b;
    if[maxdate<-2+.z.D;system "q download_corona_data.q -full_data 1; sleep 8";repulled:1b];
@@ -44,6 +44,28 @@ state_table:{[tbl;pop;parms];
   state:update N:1+til count[i] by state from state;
   state:update covid_frac:ann_covid_death%annual_deathrate from update ann_covid_death:norm_death*N%365 from state;
   state};
+
+make_country_plots:{[country;parms]
+
+  country:`date`country xasc 0!select by country,date from country;
+  country:update daily_deaths:(deaths-prev[deaths])%date-prev[date] by country from country;
+  country:update deaths7:mavg[7;daily_deaths] by country from country;
+  country:update deathrate:365*deaths7%population from country;
+  level_order:exec country from `deathrate xdesc select from country where date=(max;date) fby country, not null deathrate,population>10e6;
+ 
+  countries_of_interest:distinct `USA`France`Germany`UK`China`Israel`Japan`Australia`Sweden,first level_order;
+  graph_opts:(`terminal;`svg;`size;"800, 600";`output;docfile["country_trends.svg";parms];`title;"Annualized Death Rate by Country");
+  .graph.xyt[country;enlist(in;`country;enlist countries_of_interest);`country;`date`deathrate;graph_opts];
+  graph_opts:(`terminal;`svg;`size;"600, 450";`output;docfile["recent_country_trends.svg";parms];`title;"Last 90 Days");
+  .graph.xyt[country;((in;`country;enlist countries_of_interest);(>;`date;(-;.z.D;90)));`country;`date`deathrate;graph_opts];
+
+  graph_opts:(`terminal;`svg;`size;"900, 600";`output;docfile["worst10_countries.svg";parms];`title;"Top 13 Country Death Rates");
+  .graph.xyt[select from country where country in 13#level_order;"date>-90+.z.D";`country;`date`deathrate;graph_opts];
+  graph_opts:(`terminal;`svg;`size;"900, 600";`output;docfile["best10_countries.svg";parms];`title;"Bottom 13 Country Death Rates");
+  .graph.xyt[select from country where country in -13#level_order;"date>-90+.z.D";`country;`date`deathrate;graph_opts];
+  };
+
+
  
 make_plots:{[state_tbl;parms]
 
@@ -101,6 +123,7 @@ main:{[parms]
 
   state_tbl:state_table[tbl;pop;parms];
   make_plots[state_tbl;parms];
+  make_country_plots[data`countries;parms];
   update_report[parms];
   }
 
