@@ -3,8 +3,6 @@ Analysis of Corona Virus Data
 The [code used to produce this report](https://github.com/eichblatt/coronavirus) use my kdb library to download daily coronavirus data by state in the USA, and plot it from various perspectives.
 I did this mostly as a way to build up the kdb library's functionality as I asked questions of the data.
 
-## USA Data
-
 # [Death Trends](./death_trends.svg) 
  <img src="./death_trends.svg">
   
@@ -28,16 +26,6 @@ I did this mostly as a way to build up the kdb library's functionality as I aske
  death rate has increased by 20% due to Covid 19.
  <img src="./excess_by_state.svg">
  
-## World Data
-
-# [Recent Death Trends](./recent_country_trends.svg)
- <img src="./recent_country_trends.svg">
-
-# [Countries With Highest Mortality](./worst10_countries.svg)
- <img src="./worst10_countries.svg">
-
-# [Countries With Lowest Mortality](./best10_countries.svg)
- <img src="./best10_countries.svg">
 
 # About the Data
 
@@ -45,9 +33,7 @@ The Covid death rates are annualized daily death per person in the population of
 
 Daily Covid data for the United States from [https://covidtracking.com/](https://covidtracking.com)
 
-US Population and non-covid death rates from [the US census website](https://www.census.gov/programs-surveys/popest.html)
-
-World Population covid death rates from [corona-api.com](https://corona-api.com/countries)
+Population and non-covid death rates from [the US census website](https://www.census.gov/programs-surveys/popest.html)
 
 
-Report Updated at 2021.01.24 18:38:13 EST
+Report Updated at 2021.01.25 11:15:07 EST

@@ -13,12 +13,12 @@ system["c 23 230"];
 load_data:{[parms] 
    data:(parms`regions)!get each .file.makepath[parms`datapath] each parms`regions;
    country_data:.file.get .file.makepath[parms`datapath;"countries_history"];
-   data[`countries]:update country:`Korea from country_data where country like "Korea*";
    maxdate:exec max date from data[first parms`regions] where not null death;
    repulled:0b;
    if[maxdate<-2+.z.D;system "q download_corona_data.q -full_data 1; sleep 8";repulled:1b];
    if[maxdate=-2+.z.D;system "q download_corona_data.q -full_data 0; sleep 5";repulled:1b];
    data:$[repulled;(parms`regions)!get each .file.makepath[parms`datapath] each parms`regions;data];
+   data[`countries]:update country:`Korea from country_data where country like "Korea*";
    data};
 
 load_census_data:{[parms] 
@@ -48,12 +48,13 @@ state_table:{[tbl;pop;parms];
 make_country_plots:{[country;parms]
 
   country:`date`country xasc 0!select by country,date from country;
+  country:country uj 0!select country:`world,country_code:`WO,sum[population],sum[deaths] by date from country;
   country:update daily_deaths:(deaths-prev[deaths])%date-prev[date] by country from country;
   country:update deaths7:mavg[7;daily_deaths] by country from country;
   country:update deathrate:365*deaths7%population from country;
   level_order:exec country from `deathrate xdesc select from country where date=(max;date) fby country, not null deathrate,population>10e6;
  
-  countries_of_interest:distinct `USA`France`Germany`UK`China`Israel`Japan`Australia`Sweden,first level_order;
+  countries_of_interest:distinct `USA`France`Germany`UK`China`Israel`Japan`Australia`Sweden`world,first level_order;
   graph_opts:(`terminal;`svg;`size;"800, 600";`output;docfile["country_trends.svg";parms];`title;"Annualized Death Rate by Country");
   .graph.xyt[country;enlist(in;`country;enlist countries_of_interest);`country;`date`deathrate;graph_opts];
   graph_opts:(`terminal;`svg;`size;"600, 450";`output;docfile["recent_country_trends.svg";parms];`title;"Last 90 Days");
