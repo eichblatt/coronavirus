@@ -41,7 +41,7 @@ I did this mostly as a way to build up the kdb library's functionality as I aske
 
 # About the Data
 
-The Covid death rates are annualized daily death per person in the population of the state or region. Eg. it is 365 * the daily death rate. 
+The Covid death rates are annualized daily 7-day moving average death per person in the population of the state or region. Eg. it is 365 * the daily death rate. 
 
 Daily Covid data for the United States from [https://covidtracking.com/](https://covidtracking.com)
 
