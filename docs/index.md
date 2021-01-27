@@ -30,6 +30,9 @@ I did this mostly as a way to build up the kdb library's functionality as I aske
 
 ## World Data
 
+# [Death Trends](./country_trends.svg)
+ <img src="./country_trends.svg">
+
 # [Recent Death Trends](./recent_country_trends.svg)
  <img src="./recent_country_trends.svg">
 
@@ -55,4 +58,4 @@ Daily Covid data for the United States from [https://covidtracking.com/](https:/
 US Population and non-covid death rates from [the US census website](https://www.census.gov/programs-surveys/popest.html)
 
 World Population and covid death rates from [Our World In Data](https://ourworldindata.org/covid-deaths)
-Report Updated at 2021.01.27 16:46:15 EST
+Report Updated at 2021.01.27 16:48:56 EST

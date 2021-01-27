@@ -30,6 +30,9 @@ I did this mostly as a way to build up the kdb library's functionality as I aske
 
 ## World Data
 
+# [Death Trends](./country_trends.svg)
+ <img src="./country_trends.svg">
+
 # [Recent Death Trends](./recent_country_trends.svg)
  <img src="./recent_country_trends.svg">
 
