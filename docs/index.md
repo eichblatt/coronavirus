@@ -48,4 +48,4 @@ Daily Covid data for the United States from [https://covidtracking.com/](https:/
 US Population and non-covid death rates from [the US census website](https://www.census.gov/programs-surveys/popest.html)
 
 World Population covid death rates from [corona-api.com](https://corona-api.com/countries)
-Report Updated at 2021.01.27 11:18:30 EST
+Report Updated at 2021.01.27 11:21:24 EST
