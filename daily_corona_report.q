@@ -12,7 +12,7 @@ system["c 23 230"];
 
 load_data:{[parms] 
    data:(parms`regions)!get each .file.makepath[parms`datapath] each parms`regions;
-   country_data:.file.get .file.makepath[parms`datapath;"countries_history"];
+   country_data:.file.get .file.makepath[parms`datapath;"global_data"];
    maxdate:exec max date from data[first parms`regions] where not null death;
    repulled:0b;
    if[maxdate<-2+.z.D;system "q download_corona_data.q -full_data 1; sleep 8";repulled:1b];
@@ -48,13 +48,16 @@ state_table:{[tbl;pop;parms];
 make_country_plots:{[country;parms]
 
   country:`date`country xasc 0!select by country,date from country;
-  country:country uj 0!select country:`world,country_code:`WO,sum[population],sum[deaths] by date from country;
+  country:.tbl.rename[country;`total_deaths;`deaths];
   country:update daily_deaths:(deaths-prev[deaths])%date-prev[date] by country from country;
   country:update deaths7:mavg[7;daily_deaths] by country from country;
   country:update deathrate:365*deaths7%population from country;
+  country:update recent_change:deathrate-xprev[10;deathrate] by country from country;
+
   level_order:exec country from `deathrate xdesc select from country where date=(max;date) fby country, not null deathrate,population>10e6;
+  change_order:exec country from `recent_change xdesc select from country where date=(max;date) fby country, not null recent_change,population>10e6;
  
-  countries_of_interest:distinct `USA`France`Germany`UK`China`Israel`Japan`Australia`Sweden`world,first level_order;
+  countries_of_interest:distinct `USA`FRA`DEU`GBR`CHN`ISR`JPN`AUS`SWE`OWID_WRL,first level_order;
   graph_opts:(`terminal;`svg;`size;"800, 600";`output;docfile["country_trends.svg";parms];`title;"Annualized Death Rate by Country");
   .graph.xyt[country;enlist(in;`country;enlist countries_of_interest);`country;`date`deathrate;graph_opts];
   graph_opts:(`terminal;`svg;`size;"600, 450";`output;docfile["recent_country_trends.svg";parms];`title;"Last 90 Days");
@@ -64,10 +67,15 @@ make_country_plots:{[country;parms]
   .graph.xyt[select from country where country in 13#level_order;"date>-90+.z.D";`country;`date`deathrate;graph_opts];
   graph_opts:(`terminal;`svg;`size;"900, 600";`output;docfile["best10_countries.svg";parms];`title;"Bottom 13 Country Death Rates");
   .graph.xyt[select from country where country in -13#level_order;"date>-90+.z.D";`country;`date`deathrate;graph_opts];
+
+  graph_opts:(`terminal;`svg;`size;"900, 600";`output;docfile["most_increased_country.svg";parms];`title;"Most Increased in last 10 Days");
+  .graph.xyt[select from country where country in 13#change_order;"date>-90+.z.D";`country;`date`deathrate;graph_opts];
+  graph_opts:(`terminal;`svg;`size;"900, 600";`output;docfile["most_decreased_country.svg";parms];`title;"Most Decreased in last 10 Days");
+  .graph.xyt[select from country where country in -13#change_order;"date>-90+.z.D";`country;`date`deathrate;graph_opts];
+
   };
 
 
- 
 make_plots:{[state_tbl;parms]
 
   change_order:exec state from `recent_change xdesc select from state_tbl where date=(max;date) fby state, not null recent_change;

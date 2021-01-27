@@ -39,6 +39,13 @@ I did this mostly as a way to build up the kdb library's functionality as I aske
 # [Countries With Lowest Mortality](./best10_countries.svg)
  <img src="./best10_countries.svg">
 
+# [Countries With Most Increased Mortality](./most_increased_country.svg)
+ <img src="./most_increased_country.svg">
+
+# [Countries With Most Decreased Mortality](./most_decreased_country.svg)
+ <img src="./most_decreased_country.svg">
+
+
 # About the Data
 
 The Covid death rates are annualized daily 7-day moving average death per person in the population of the state or region. Eg. it is 365 * the daily death rate. 
@@ -47,4 +54,4 @@ Daily Covid data for the United States from [https://covidtracking.com/](https:/
 
 US Population and non-covid death rates from [the US census website](https://www.census.gov/programs-surveys/popest.html)
 
-World Population covid death rates from [corona-api.com](https://corona-api.com/countries)
+World Population and covid death rates from [Our World In Data](https://ourworldindata.org/covid-deaths)

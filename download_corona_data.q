@@ -3,10 +3,32 @@ c:.opts.addopt[`;`debug;0b;"debug"];
 c:.opts.addopt[c;`datapath;.file.makepath[`:/home/steve;"projects/coronavirus/data"];"data path"];
 c:.opts.addopt[c;`data_api;"https://api.covidtracking.com";"link to data api"];
 c:.opts.addopt[c;`countries_data_api;"https://corona-api.com/countries";"link to data api"];
+c:.opts.addopt[c;`owid_data_api;"https://covid.ourworldindata.org/data";"link to data api"];
 c:.opts.addopt[c;`regions;`us`states;"valid regions to query"];
-c:.opts.addopt[c;`full_data;1b;"download all data, or just update"];
+c:.opts.addopt[c;`full_data;0b;"download all data, or just update"];
 parms:.opts.get_opts c;
 show parms;
+  
+
+null_empty_data:{[t;c] l:t c; t[c]:@[l;where 0<type each l;:;0Nf]; t};
+
+download_owid_data:{[parms]  // from https://covid.ourworldindata.org/data/
+  old_data:.file.get .file.makepath[parms[`datapath];`global_data];
+  maxdate:exec max date from old_data;
+  if[maxdate >= .z.D ;:old_data]; // only download max of once per day 
+  hist:parms[`full_data] or maxdate < .z.D-1; // download full data if maxdate more than 1 day ago.
+  url:parms[`owid_data_api];
+
+  optdict:.dict.kvd(`version;$[hist;`;`latest];`filetype;$[hist;`data;`latest]);
+  url:.string.append[parms[`owid_data_api];.string.format["/%version%/owid-covid-%filetype%.csv";optdict]];
+
+  request:"curl -s \"",url,"\"";
+  data:("SSSD",55#"F";1#csv)0: system request;
+  data:`date`country`population xcols .tbl.rename[data;`iso_code;`country];
+  
+  data:$[hist;data;0!select by date,country from old_data,data];
+  .log.info "Saving country history to ",string .file.makepath[parms[`datapath];`global_data] set distinct `date`country xasc data; 
+  data}
 
 download_country_data:{[parms]
   optdict:.dict.kvd(`hist;$[parms[`full_data];`daily;`current]);
@@ -43,6 +65,7 @@ save_data:{[t;region;parms]
   
 main:{[parms]
   country_data:download_country_data[parms];
+  owid_data:download_owid_data[parms];
   raw_data:(parms`regions)!download_from_api[;parms] each parms[`regions];
   save_data[raw_data;;parms] each key raw_data;
   }
