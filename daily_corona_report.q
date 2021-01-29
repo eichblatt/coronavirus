@@ -88,7 +88,7 @@ make_plots:{[state_tbl;parms]
   tt:select state,date,excess_deaths:(N%365)*death%(annual_deathrate*pop) from state_tbl;
   .graph.xyt[select by state from tt;"not null excess_deaths";0b;`state`excess_deaths;graph_opts];
 
-  states_of_interest:distinct `us`NY`CA`TX`PA`HI`NJ,first level_order;
+  states_of_interest:distinct `us`NY`CA`TX`PA`NJ,(first level_order),last level_order;
   graph_opts:(`terminal;`svg;`size;"800, 600";`output;docfile["death_trends.svg";parms];`title;"Annualized Death Rate by State");
   .graph.xyt[state_tbl;enlist(in;`state;enlist states_of_interest);`state;`date`ann_covid_deathrate;graph_opts];
   graph_opts:(`terminal;`svg;`size;"600, 450";`output;docfile["recent_death_trends.svg";parms];`title;"Last 90 Days");
