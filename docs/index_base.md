@@ -23,8 +23,12 @@ I did this mostly as a way to build up the kdb library's functionality as I aske
 # [States With Most Decreased Mortality](./most_decreased.svg) 
  <img src="./most_decreased.svg">
  
-# [Excess Mortality](./excess_by_state.svg) 
- Excess Mortality is defined as what fraction of the typical death rate is attrituable to the Covid 19. An excess mortality of 0.2 would mean that the 
+# [Total Excess Mortality](./excess_by_state.svg) 
+ Excess Mortality is integrated over the entire Covid pandemic. Excess Mortality is defined 
+ ```
+ $\frac{Total Covid Deaths}{Annual Deathrate * population } * \frac{Days of Pandemic}{365}$
+ ```
+ An excess mortality of 0.2 would mean that the 
  death rate has increased by 20% due to Covid 19.
  <img src="./excess_by_state.svg">
 
