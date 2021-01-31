@@ -24,7 +24,8 @@ download_owid_data:{[parms]  // from https://covid.ourworldindata.org/data/
 
   request:"curl -s \"",url,"\"";
   data:("SSSD",55#"F";1#csv)0: system request;
-  data:`date`country`population xcols .tbl.rename[data;`iso_code`last_updated_date;`country`date];
+  data:.tbl.rename[data;`iso_code;`country];
+  data:`date`country`population xcols $[`last_updated_date in cols data;.tbl.rename[data;`last_updated_date;`date];data];
   
   data:$[hist;data;0!select by date,country from old_data,data];
   .log.info "Saving country history to ",string .file.makepath[parms[`datapath];`global_data] set distinct `date`country xasc data; 

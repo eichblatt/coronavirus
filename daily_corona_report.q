@@ -84,7 +84,7 @@ make_plots:{[state_tbl;parms]
   .log.info "Worst day of covid deaths by state, annualized, and compared with the average death rate for the state";
   show `N xcols update N:1+i from `frac_covid xdesc update frac_covid:pop:pop%1e6 from select from state_tbl where ann_covid_deathrate=(max;ann_covid_deathrate) fby state;
 
-  graph_opts:(`title;"Excess Covid Deaths by State";`xsort;0b;`terminal;`svg;`size;"1200, 900";`output;docfile["excess_by_state.svg";parms]);
+  graph_opts:(`title;"Total Excess Covid Deaths by State";`xsort;0b;`terminal;`svg;`size;"1200, 900";`output;docfile["excess_by_state.svg";parms]);
   tt:select state,date,excess_deaths:(N%365)*death%(annual_deathrate*pop) from state_tbl;
   .graph.xyt[select by state from tt;"not null excess_deaths";0b;`state`excess_deaths;graph_opts];
 
