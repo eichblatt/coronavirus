@@ -59,7 +59,7 @@ save_data:{[t;region;parms]
   t:t[region];
   outfile:.file.makepath[parms`datapath;region];
   t_orig:$[.file.exists[outfile];get outfile;()];
-  result:0!?[t_orig,t;();{x!x}$[region~`states;`date`state;`date,()];()]; 
+  result:0!?[(t_orig uj 0!t);();{x!x}$[region~`states;`date`state;`date,()];()]; 
   -1 "Saving data to ",string outfile set result;
   0b} 
     
