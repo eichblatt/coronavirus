@@ -3,7 +3,27 @@ Analysis of Corona Virus Data
 The [code used to produce this report](https://github.com/eichblatt/coronavirus) use my kdb library to download daily coronavirus data by state in the USA, and plot it from various perspectives.
 I did this mostly as a way to build up the kdb library's functionality as I asked questions of the data.
 
-## USA Data
+## World Data
+
+# [Death Trends](./country_trends.svg)
+ <img src="./country_trends.svg">
+
+# [Recent Death Trends](./recent_country_trends.svg)
+ <img src="./recent_country_trends.svg">
+
+# [Countries With Highest Mortality](./worst10_countries.svg)
+ <img src="./worst10_countries.svg">
+
+# [Countries With Lowest Mortality](./best10_countries.svg)
+ <img src="./best10_countries.svg">
+
+# [Countries With Most Increased Mortality](./most_increased_country.svg)
+ <img src="./most_increased_country.svg">
+
+# [Countries With Most Decreased Mortality](./most_decreased_country.svg)
+ <img src="./most_decreased_country.svg">
+
+## USA Data (stopped updating in March 2021)
 
 # [Death Trends](./death_trends.svg) 
  <img src="./death_trends.svg">
@@ -31,26 +51,6 @@ I did this mostly as a way to build up the kdb library's functionality as I aske
  An excess mortality of 0.2 would mean that the 
  death rate has increased by 20% due to Covid 19.
  <img src="./excess_by_state.svg">
-
-## World Data
-
-# [Death Trends](./country_trends.svg)
- <img src="./country_trends.svg">
-
-# [Recent Death Trends](./recent_country_trends.svg)
- <img src="./recent_country_trends.svg">
-
-# [Countries With Highest Mortality](./worst10_countries.svg)
- <img src="./worst10_countries.svg">
-
-# [Countries With Lowest Mortality](./best10_countries.svg)
- <img src="./best10_countries.svg">
-
-# [Countries With Most Increased Mortality](./most_increased_country.svg)
- <img src="./most_increased_country.svg">
-
-# [Countries With Most Decreased Mortality](./most_decreased_country.svg)
- <img src="./most_decreased_country.svg">
 
 
 # About the Data
