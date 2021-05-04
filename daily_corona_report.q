@@ -57,7 +57,7 @@ make_country_plots:{[country;parms]
   level_order:exec country from `deathrate xdesc select from country where date=(max;date) fby country, not null deathrate,population>10e6;
   change_order:exec country from `recent_change xdesc select from country where date=(max;date) fby country, not null recent_change,population>10e6;
  
-  countries_of_interest:distinct `USA`FRA`DEU`GBR`CHN`ISR`JPN`AUS`SWE`OWID_WRL,first level_order;
+  countries_of_interest:distinct `USA`FRA`DEU`GBR`CHN`ISR`JPN`AUS`SWE`IND`OWID_WRL,first level_order;
   graph_opts:(`terminal;`svg;`size;"800, 600";`output;docfile["country_trends.svg";parms];`title;"Annualized Death Rate by Country");
   .graph.xyt[country;enlist(in;`country;enlist countries_of_interest);`country;`date`deathrate;graph_opts];
   graph_opts:(`terminal;`svg;`size;"600, 450";`output;docfile["recent_country_trends.svg";parms];`title;"Last 90 Days");
