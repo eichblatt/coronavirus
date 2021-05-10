@@ -23,7 +23,7 @@ I did this mostly as a way to build up the kdb library's functionality as I aske
 # [Countries With Most Decreased Mortality](./most_decreased_country.svg)
  <img src="./most_decreased_country.svg">
 
-## USA Data (stopped updating in March 2021)
+## USA Data (until March 2021)
 
 # [Death Trends](./death_trends.svg) 
  <img src="./death_trends.svg">
@@ -64,4 +64,4 @@ US Population and non-covid death rates from [the US census website](https://www
 World Population and covid death rates from [Our World In Data](https://ourworldindata.org/covid-deaths)
 
 
-Report Updated at 2021.05.04 17:54:32 EST
+Report Updated at 2021.05.10 09:59:52 EST
