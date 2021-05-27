@@ -88,105 +88,85 @@
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<path stroke='black'  d='M88.5,542.4 L88.5,533.4 M88.5,54.1 L88.5,63.1  '/>	<g transform="translate(88.5,564.3)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="middle">
-		<text><tspan font-family="Arial" >02/25</tspan></text>
+		<text><tspan font-family="Arial" >02/27</tspan></text>
 	</g>
 	<g transform="translate(88.5,582.3)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text><tspan font-family="Arial" >00:00</tspan></text>
 	</g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='black'  d='M108.2,542.4 L108.2,537.9 M108.2,54.1 L108.2,58.6 M127.8,542.4 L127.8,537.9 M127.8,54.1 L127.8,58.6
-		M147.5,542.4 L147.5,537.9 M147.5,54.1 L147.5,58.6 M167.2,542.4 L167.2,533.4 M167.2,54.1 L167.2,63.1
-		 '/>	<g transform="translate(167.2,564.3)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="middle">
-		<text><tspan font-family="Arial" >02/26</tspan></text>
-	</g>
-	<g transform="translate(167.2,582.3)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="middle">
-		<text><tspan font-family="Arial" >00:00</tspan></text>
-	</g>
-</g>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='black'  d='M186.8,542.4 L186.8,537.9 M186.8,54.1 L186.8,58.6 M206.5,542.4 L206.5,537.9 M206.5,54.1 L206.5,58.6
-		M226.1,542.4 L226.1,537.9 M226.1,54.1 L226.1,58.6 M245.8,542.4 L245.8,533.4 M245.8,54.1 L245.8,63.1
-		 '/>	<g transform="translate(245.8,564.3)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="middle">
-		<text><tspan font-family="Arial" >02/27</tspan></text>
-	</g>
-	<g transform="translate(245.8,582.3)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="middle">
-		<text><tspan font-family="Arial" >00:00</tspan></text>
-	</g>
-</g>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='black'  d='M265.5,542.4 L265.5,537.9 M265.5,54.1 L265.5,58.6 M285.1,542.4 L285.1,537.9 M285.1,54.1 L285.1,58.6
-		M304.8,542.4 L304.8,537.9 M304.8,54.1 L304.8,58.6 M324.5,542.4 L324.5,533.4 M324.5,54.1 L324.5,63.1
-		 '/>	<g transform="translate(324.5,564.3)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<path stroke='black'  d='M113.1,542.4 L113.1,537.9 M113.1,54.1 L113.1,58.6 M137.7,542.4 L137.7,537.9 M137.7,54.1 L137.7,58.6
+		M162.2,542.4 L162.2,537.9 M162.2,54.1 L162.2,58.6 M186.8,542.4 L186.8,533.4 M186.8,54.1 L186.8,63.1
+		 '/>	<g transform="translate(186.8,564.3)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text><tspan font-family="Arial" >02/28</tspan></text>
 	</g>
-	<g transform="translate(324.5,582.3)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<g transform="translate(186.8,582.3)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text><tspan font-family="Arial" >00:00</tspan></text>
 	</g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='black'  d='M344.1,542.4 L344.1,537.9 M344.1,54.1 L344.1,58.6 M363.8,542.4 L363.8,537.9 M363.8,54.1 L363.8,58.6
-		M383.4,542.4 L383.4,537.9 M383.4,54.1 L383.4,58.6 M403.1,542.4 L403.1,533.4 M403.1,54.1 L403.1,63.1
-		 '/>	<g transform="translate(403.1,564.3)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<path stroke='black'  d='M211.4,542.4 L211.4,537.9 M211.4,54.1 L211.4,58.6 M236.0,542.4 L236.0,537.9 M236.0,54.1 L236.0,58.6
+		M260.5,542.4 L260.5,537.9 M260.5,54.1 L260.5,58.6 M285.1,542.4 L285.1,533.4 M285.1,54.1 L285.1,63.1
+		 '/>	<g transform="translate(285.1,564.3)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text><tspan font-family="Arial" >03/01</tspan></text>
 	</g>
-	<g transform="translate(403.1,582.3)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<g transform="translate(285.1,582.3)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text><tspan font-family="Arial" >00:00</tspan></text>
 	</g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='black'  d='M422.8,542.4 L422.8,537.9 M422.8,54.1 L422.8,58.6 M442.4,542.4 L442.4,537.9 M442.4,54.1 L442.4,58.6
-		M462.1,542.4 L462.1,537.9 M462.1,54.1 L462.1,58.6 M481.8,542.4 L481.8,533.4 M481.8,54.1 L481.8,63.1
-		 '/>	<g transform="translate(481.8,564.3)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<path stroke='black'  d='M309.7,542.4 L309.7,537.9 M309.7,54.1 L309.7,58.6 M334.3,542.4 L334.3,537.9 M334.3,54.1 L334.3,58.6
+		M358.9,542.4 L358.9,537.9 M358.9,54.1 L358.9,58.6 M383.4,542.4 L383.4,533.4 M383.4,54.1 L383.4,63.1
+		 '/>	<g transform="translate(383.4,564.3)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text><tspan font-family="Arial" >03/02</tspan></text>
+	</g>
+	<g transform="translate(383.4,582.3)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="middle">
+		<text><tspan font-family="Arial" >00:00</tspan></text>
+	</g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='black'  d='M408.0,542.4 L408.0,537.9 M408.0,54.1 L408.0,58.6 M432.6,542.4 L432.6,537.9 M432.6,54.1 L432.6,58.6
+		M457.2,542.4 L457.2,537.9 M457.2,54.1 L457.2,58.6 M481.8,542.4 L481.8,533.4 M481.8,54.1 L481.8,63.1
+		 '/>	<g transform="translate(481.8,564.3)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="middle">
+		<text><tspan font-family="Arial" >03/03</tspan></text>
 	</g>
 	<g transform="translate(481.8,582.3)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text><tspan font-family="Arial" >00:00</tspan></text>
 	</g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='black'  d='M501.4,542.4 L501.4,537.9 M501.4,54.1 L501.4,58.6 M521.1,542.4 L521.1,537.9 M521.1,54.1 L521.1,58.6
-		M540.7,542.4 L540.7,537.9 M540.7,54.1 L540.7,58.6 M560.4,542.4 L560.4,533.4 M560.4,54.1 L560.4,63.1
-		 '/>	<g transform="translate(560.4,564.3)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="middle">
-		<text><tspan font-family="Arial" >03/03</tspan></text>
-	</g>
-	<g transform="translate(560.4,582.3)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="middle">
-		<text><tspan font-family="Arial" >00:00</tspan></text>
-	</g>
-</g>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='black'  d='M580.1,542.4 L580.1,537.9 M580.1,54.1 L580.1,58.6 M599.7,542.4 L599.7,537.9 M599.7,54.1 L599.7,58.6
-		M619.4,542.4 L619.4,537.9 M619.4,54.1 L619.4,58.6 M639.1,542.4 L639.1,533.4 M639.1,54.1 L639.1,63.1
-		 '/>	<g transform="translate(639.1,564.3)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<path stroke='black'  d='M506.3,542.4 L506.3,537.9 M506.3,54.1 L506.3,58.6 M530.9,542.4 L530.9,537.9 M530.9,54.1 L530.9,58.6
+		M555.5,542.4 L555.5,537.9 M555.5,54.1 L555.5,58.6 M580.1,542.4 L580.1,533.4 M580.1,54.1 L580.1,63.1
+		 '/>	<g transform="translate(580.1,564.3)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text><tspan font-family="Arial" >03/04</tspan></text>
 	</g>
-	<g transform="translate(639.1,582.3)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<g transform="translate(580.1,582.3)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text><tspan font-family="Arial" >00:00</tspan></text>
 	</g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='black'  d='M658.7,542.4 L658.7,537.9 M658.7,54.1 L658.7,58.6 M678.4,542.4 L678.4,537.9 M678.4,54.1 L678.4,58.6
-		M698.0,542.4 L698.0,537.9 M698.0,54.1 L698.0,58.6 M717.7,542.4 L717.7,533.4 M717.7,54.1 L717.7,63.1
-		 '/>	<g transform="translate(717.7,564.3)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<path stroke='black'  d='M604.6,542.4 L604.6,537.9 M604.6,54.1 L604.6,58.6 M629.2,542.4 L629.2,537.9 M629.2,54.1 L629.2,58.6
+		M653.8,542.4 L653.8,537.9 M653.8,54.1 L653.8,58.6 M678.4,542.4 L678.4,533.4 M678.4,54.1 L678.4,63.1
+		 '/>	<g transform="translate(678.4,564.3)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text><tspan font-family="Arial" >03/05</tspan></text>
 	</g>
-	<g transform="translate(717.7,582.3)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<g transform="translate(678.4,582.3)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text><tspan font-family="Arial" >00:00</tspan></text>
 	</g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='black'  d='M737.4,542.4 L737.4,537.9 M737.4,54.1 L737.4,58.6 M757.0,542.4 L757.0,537.9 M757.0,54.1 L757.0,58.6
-		M776.7,542.4 L776.7,537.9 M776.7,54.1 L776.7,58.6 M796.3,542.4 L796.3,533.4 M796.3,54.1 L796.3,63.1
-		 '/>	<g transform="translate(796.3,564.3)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<path stroke='black'  d='M703.0,542.4 L703.0,537.9 M703.0,54.1 L703.0,58.6 M727.5,542.4 L727.5,537.9 M727.5,54.1 L727.5,58.6
+		M752.1,542.4 L752.1,537.9 M752.1,54.1 L752.1,58.6 M776.7,542.4 L776.7,533.4 M776.7,54.1 L776.7,63.1
+		 '/>	<g transform="translate(776.7,564.3)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text><tspan font-family="Arial" >03/06</tspan></text>
 	</g>
-	<g transform="translate(796.3,582.3)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<g transform="translate(776.7,582.3)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text><tspan font-family="Arial" >00:00</tspan></text>
 	</g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='black'  d='M816.0,542.4 L816.0,537.9 M816.0,54.1 L816.0,58.6 M835.7,542.4 L835.7,537.9 M835.7,54.1 L835.7,58.6
-		M855.3,542.4 L855.3,537.9 M855.3,54.1 L855.3,58.6 M875.0,542.4 L875.0,533.4 M875.0,54.1 L875.0,63.1
+	<path stroke='black'  d='M801.3,542.4 L801.3,537.9 M801.3,54.1 L801.3,58.6 M825.8,542.4 L825.8,537.9 M825.8,54.1 L825.8,58.6
+		M850.4,542.4 L850.4,537.9 M850.4,54.1 L850.4,58.6 M875.0,542.4 L875.0,533.4 M875.0,54.1 L875.0,63.1
 		 '/>	<g transform="translate(875.0,564.3)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text><tspan font-family="Arial" >03/07</tspan></text>
 	</g>
@@ -224,35 +204,29 @@
 	</g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="3.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='rgb(  0,   0,   0)'  d='M121.7,72.1 L163.9,72.1 M88.5,372.3 L167.2,398.4 L245.8,393.8 L324.5,398.8 L403.1,398.8 L481.8,427.1
-		L560.4,433.0 L639.1,443.5 L717.7,443.1 L796.3,449.9 L875.0,453.2  '/>	<g transform="translate(88.5,376.2)" stroke="none" fill="rgb(0,0,0)" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<path stroke='rgb(  0,   0,   0)'  d='M121.7,72.1 L163.9,72.1 M88.5,393.8 L186.8,398.8 L285.1,398.8 L383.4,427.1 L481.8,433.0 L580.1,443.5
+		L678.4,443.1 L776.7,449.9 L875.0,453.2  '/>	<g transform="translate(88.5,397.7)" stroke="none" fill="rgb(0,0,0)" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text>.</text>
 	</g>
-	<g transform="translate(167.2,402.3)" stroke="none" fill="rgb(0,0,0)" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<g transform="translate(186.8,402.7)" stroke="none" fill="rgb(0,0,0)" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text>.</text>
 	</g>
-	<g transform="translate(245.8,397.7)" stroke="none" fill="rgb(0,0,0)" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<g transform="translate(285.1,402.7)" stroke="none" fill="rgb(0,0,0)" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text>.</text>
 	</g>
-	<g transform="translate(324.5,402.7)" stroke="none" fill="rgb(0,0,0)" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<g transform="translate(383.4,431.0)" stroke="none" fill="rgb(0,0,0)" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text>.</text>
 	</g>
-	<g transform="translate(403.1,402.7)" stroke="none" fill="rgb(0,0,0)" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<g transform="translate(481.8,436.9)" stroke="none" fill="rgb(0,0,0)" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text>.</text>
 	</g>
-	<g transform="translate(481.8,431.0)" stroke="none" fill="rgb(0,0,0)" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<g transform="translate(580.1,447.4)" stroke="none" fill="rgb(0,0,0)" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text>.</text>
 	</g>
-	<g transform="translate(560.4,436.9)" stroke="none" fill="rgb(0,0,0)" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<g transform="translate(678.4,447.0)" stroke="none" fill="rgb(0,0,0)" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text>.</text>
 	</g>
-	<g transform="translate(639.1,447.4)" stroke="none" fill="rgb(0,0,0)" font-family="Arial" font-size="12.00"  text-anchor="middle">
-		<text>.</text>
-	</g>
-	<g transform="translate(717.7,447.0)" stroke="none" fill="rgb(0,0,0)" font-family="Arial" font-size="12.00"  text-anchor="middle">
-		<text>.</text>
-	</g>
-	<g transform="translate(796.3,453.8)" stroke="none" fill="rgb(0,0,0)" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<g transform="translate(776.7,453.8)" stroke="none" fill="rgb(0,0,0)" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text>.</text>
 	</g>
 	<g transform="translate(875.0,457.1)" stroke="none" fill="rgb(0,0,0)" font-family="Arial" font-size="12.00"  text-anchor="middle">
@@ -270,35 +244,29 @@
 	</g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="3.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='rgb(223,   0,   0)'  d='M121.7,90.1 L163.9,90.1 M88.5,362.1 L167.2,364.4 L245.8,367.7 L324.5,377.1 L403.1,378.5 L481.8,372.5
-		L560.4,375.3 L639.1,440.6 L717.7,439.9 L796.3,441.6 L875.0,433.8  '/>	<g transform="translate(88.5,366.0)" stroke="none" fill="rgb(223,0,0)" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<path stroke='rgb(223,   0,   0)'  d='M121.7,90.1 L163.9,90.1 M88.5,367.7 L186.8,377.1 L285.1,378.5 L383.4,372.5 L481.8,375.3 L580.1,440.6
+		L678.4,439.9 L776.7,441.6 L875.0,433.8  '/>	<g transform="translate(88.5,371.6)" stroke="none" fill="rgb(223,0,0)" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text>.</text>
 	</g>
-	<g transform="translate(167.2,368.3)" stroke="none" fill="rgb(223,0,0)" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<g transform="translate(186.8,381.0)" stroke="none" fill="rgb(223,0,0)" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text>.</text>
 	</g>
-	<g transform="translate(245.8,371.6)" stroke="none" fill="rgb(223,0,0)" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<g transform="translate(285.1,382.4)" stroke="none" fill="rgb(223,0,0)" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text>.</text>
 	</g>
-	<g transform="translate(324.5,381.0)" stroke="none" fill="rgb(223,0,0)" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<g transform="translate(383.4,376.4)" stroke="none" fill="rgb(223,0,0)" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text>.</text>
 	</g>
-	<g transform="translate(403.1,382.4)" stroke="none" fill="rgb(223,0,0)" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<g transform="translate(481.8,379.2)" stroke="none" fill="rgb(223,0,0)" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text>.</text>
 	</g>
-	<g transform="translate(481.8,376.4)" stroke="none" fill="rgb(223,0,0)" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<g transform="translate(580.1,444.5)" stroke="none" fill="rgb(223,0,0)" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text>.</text>
 	</g>
-	<g transform="translate(560.4,379.2)" stroke="none" fill="rgb(223,0,0)" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<g transform="translate(678.4,443.8)" stroke="none" fill="rgb(223,0,0)" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text>.</text>
 	</g>
-	<g transform="translate(639.1,444.5)" stroke="none" fill="rgb(223,0,0)" font-family="Arial" font-size="12.00"  text-anchor="middle">
-		<text>.</text>
-	</g>
-	<g transform="translate(717.7,443.8)" stroke="none" fill="rgb(223,0,0)" font-family="Arial" font-size="12.00"  text-anchor="middle">
-		<text>.</text>
-	</g>
-	<g transform="translate(796.3,445.5)" stroke="none" fill="rgb(223,0,0)" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<g transform="translate(776.7,445.5)" stroke="none" fill="rgb(223,0,0)" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text>.</text>
 	</g>
 	<g transform="translate(875.0,437.7)" stroke="none" fill="rgb(223,0,0)" font-family="Arial" font-size="12.00"  text-anchor="middle">
@@ -316,35 +284,29 @@
 	</g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="3.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='rgb(255, 144,  16)'  d='M121.7,108.1 L163.9,108.1 M88.5,348.2 L167.2,364.0 L245.8,436.5 L324.5,427.0 L403.1,430.2 L481.8,452.3
-		L560.4,480.6 L639.1,480.6 L717.7,490.1 L796.3,455.4 L875.0,439.7  '/>	<g transform="translate(88.5,352.1)" stroke="none" fill="rgb(255,144,16)" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<path stroke='rgb(255, 144,  16)'  d='M121.7,108.1 L163.9,108.1 M88.5,436.5 L186.8,427.0 L285.1,430.2 L383.4,452.3 L481.8,480.6 L580.1,480.6
+		L678.4,490.1 L776.7,455.4 L875.0,439.7  '/>	<g transform="translate(88.5,440.4)" stroke="none" fill="rgb(255,144,16)" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text>.</text>
 	</g>
-	<g transform="translate(167.2,367.9)" stroke="none" fill="rgb(255,144,16)" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<g transform="translate(186.8,430.9)" stroke="none" fill="rgb(255,144,16)" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text>.</text>
 	</g>
-	<g transform="translate(245.8,440.4)" stroke="none" fill="rgb(255,144,16)" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<g transform="translate(285.1,434.1)" stroke="none" fill="rgb(255,144,16)" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text>.</text>
 	</g>
-	<g transform="translate(324.5,430.9)" stroke="none" fill="rgb(255,144,16)" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<g transform="translate(383.4,456.2)" stroke="none" fill="rgb(255,144,16)" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text>.</text>
 	</g>
-	<g transform="translate(403.1,434.1)" stroke="none" fill="rgb(255,144,16)" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<g transform="translate(481.8,484.5)" stroke="none" fill="rgb(255,144,16)" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text>.</text>
 	</g>
-	<g transform="translate(481.8,456.2)" stroke="none" fill="rgb(255,144,16)" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<g transform="translate(580.1,484.5)" stroke="none" fill="rgb(255,144,16)" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text>.</text>
 	</g>
-	<g transform="translate(560.4,484.5)" stroke="none" fill="rgb(255,144,16)" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<g transform="translate(678.4,494.0)" stroke="none" fill="rgb(255,144,16)" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text>.</text>
 	</g>
-	<g transform="translate(639.1,484.5)" stroke="none" fill="rgb(255,144,16)" font-family="Arial" font-size="12.00"  text-anchor="middle">
-		<text>.</text>
-	</g>
-	<g transform="translate(717.7,494.0)" stroke="none" fill="rgb(255,144,16)" font-family="Arial" font-size="12.00"  text-anchor="middle">
-		<text>.</text>
-	</g>
-	<g transform="translate(796.3,459.3)" stroke="none" fill="rgb(255,144,16)" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<g transform="translate(776.7,459.3)" stroke="none" fill="rgb(255,144,16)" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text>.</text>
 	</g>
 	<g transform="translate(875.0,443.6)" stroke="none" fill="rgb(255,144,16)" font-family="Arial" font-size="12.00"  text-anchor="middle">
@@ -362,35 +324,29 @@
 	</g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="3.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='rgb(223, 223,   0)'  d='M121.7,126.1 L163.9,126.1 M88.5,453.5 L167.2,464.9 L245.8,465.9 L324.5,461.5 L403.1,463.1 L481.8,465.1
-		L560.4,464.5 L639.1,466.5 L717.7,467.4 L796.3,468.9 L875.0,477.5  '/>	<g transform="translate(88.5,457.4)" stroke="none" fill="rgb(223,223,0)" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<path stroke='rgb(223, 223,   0)'  d='M121.7,126.1 L163.9,126.1 M88.5,465.9 L186.8,461.5 L285.1,463.1 L383.4,465.1 L481.8,464.5 L580.1,466.5
+		L678.4,467.4 L776.7,468.9 L875.0,477.5  '/>	<g transform="translate(88.5,469.8)" stroke="none" fill="rgb(223,223,0)" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text>.</text>
 	</g>
-	<g transform="translate(167.2,468.8)" stroke="none" fill="rgb(223,223,0)" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<g transform="translate(186.8,465.4)" stroke="none" fill="rgb(223,223,0)" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text>.</text>
 	</g>
-	<g transform="translate(245.8,469.8)" stroke="none" fill="rgb(223,223,0)" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<g transform="translate(285.1,467.0)" stroke="none" fill="rgb(223,223,0)" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text>.</text>
 	</g>
-	<g transform="translate(324.5,465.4)" stroke="none" fill="rgb(223,223,0)" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<g transform="translate(383.4,469.0)" stroke="none" fill="rgb(223,223,0)" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text>.</text>
 	</g>
-	<g transform="translate(403.1,467.0)" stroke="none" fill="rgb(223,223,0)" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<g transform="translate(481.8,468.4)" stroke="none" fill="rgb(223,223,0)" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text>.</text>
 	</g>
-	<g transform="translate(481.8,469.0)" stroke="none" fill="rgb(223,223,0)" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<g transform="translate(580.1,470.4)" stroke="none" fill="rgb(223,223,0)" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text>.</text>
 	</g>
-	<g transform="translate(560.4,468.4)" stroke="none" fill="rgb(223,223,0)" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<g transform="translate(678.4,471.3)" stroke="none" fill="rgb(223,223,0)" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text>.</text>
 	</g>
-	<g transform="translate(639.1,470.4)" stroke="none" fill="rgb(223,223,0)" font-family="Arial" font-size="12.00"  text-anchor="middle">
-		<text>.</text>
-	</g>
-	<g transform="translate(717.7,471.3)" stroke="none" fill="rgb(223,223,0)" font-family="Arial" font-size="12.00"  text-anchor="middle">
-		<text>.</text>
-	</g>
-	<g transform="translate(796.3,472.8)" stroke="none" fill="rgb(223,223,0)" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<g transform="translate(776.7,472.8)" stroke="none" fill="rgb(223,223,0)" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text>.</text>
 	</g>
 	<g transform="translate(875.0,481.4)" stroke="none" fill="rgb(223,223,0)" font-family="Arial" font-size="12.00"  text-anchor="middle">
@@ -408,35 +364,29 @@
 	</g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="3.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='rgb(  0, 153,   0)'  d='M121.7,144.1 L163.9,144.1 M88.5,370.3 L167.2,424.4 L245.8,440.8 L324.5,441.1 L403.1,444.0 L481.8,440.5
-		L560.4,438.2 L639.1,441.1 L717.7,428.1 L796.3,423.8 L875.0,423.8  '/>	<g transform="translate(88.5,374.2)" stroke="none" fill="rgb(0,153,0)" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<path stroke='rgb(  0, 153,   0)'  d='M121.7,144.1 L163.9,144.1 M88.5,440.8 L186.8,441.1 L285.1,444.0 L383.4,440.5 L481.8,438.2 L580.1,441.1
+		L678.4,428.1 L776.7,423.8 L875.0,423.8  '/>	<g transform="translate(88.5,444.7)" stroke="none" fill="rgb(0,153,0)" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text>.</text>
 	</g>
-	<g transform="translate(167.2,428.3)" stroke="none" fill="rgb(0,153,0)" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<g transform="translate(186.8,445.0)" stroke="none" fill="rgb(0,153,0)" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text>.</text>
 	</g>
-	<g transform="translate(245.8,444.7)" stroke="none" fill="rgb(0,153,0)" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<g transform="translate(285.1,447.9)" stroke="none" fill="rgb(0,153,0)" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text>.</text>
 	</g>
-	<g transform="translate(324.5,445.0)" stroke="none" fill="rgb(0,153,0)" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<g transform="translate(383.4,444.4)" stroke="none" fill="rgb(0,153,0)" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text>.</text>
 	</g>
-	<g transform="translate(403.1,447.9)" stroke="none" fill="rgb(0,153,0)" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<g transform="translate(481.8,442.1)" stroke="none" fill="rgb(0,153,0)" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text>.</text>
 	</g>
-	<g transform="translate(481.8,444.4)" stroke="none" fill="rgb(0,153,0)" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<g transform="translate(580.1,445.0)" stroke="none" fill="rgb(0,153,0)" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text>.</text>
 	</g>
-	<g transform="translate(560.4,442.1)" stroke="none" fill="rgb(0,153,0)" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<g transform="translate(678.4,432.0)" stroke="none" fill="rgb(0,153,0)" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text>.</text>
 	</g>
-	<g transform="translate(639.1,445.0)" stroke="none" fill="rgb(0,153,0)" font-family="Arial" font-size="12.00"  text-anchor="middle">
-		<text>.</text>
-	</g>
-	<g transform="translate(717.7,432.0)" stroke="none" fill="rgb(0,153,0)" font-family="Arial" font-size="12.00"  text-anchor="middle">
-		<text>.</text>
-	</g>
-	<g transform="translate(796.3,427.7)" stroke="none" fill="rgb(0,153,0)" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<g transform="translate(776.7,427.7)" stroke="none" fill="rgb(0,153,0)" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text>.</text>
 	</g>
 	<g transform="translate(875.0,427.7)" stroke="none" fill="rgb(0,153,0)" font-family="Arial" font-size="12.00"  text-anchor="middle">
@@ -454,35 +404,29 @@
 	</g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="3.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='rgb(  0,   0, 153)'  d='M121.7,162.1 L163.9,162.1 M88.5,470.4 L167.2,467.7 L245.8,472.2 L324.5,470.4 L403.1,470.8 L481.8,467.3
-		L560.4,463.7 L639.1,458.8 L717.7,467.7 L796.3,463.7 L875.0,467.3  '/>	<g transform="translate(88.5,474.3)" stroke="none" fill="rgb(0,0,153)" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<path stroke='rgb(  0,   0, 153)'  d='M121.7,162.1 L163.9,162.1 M88.5,472.2 L186.8,470.4 L285.1,470.8 L383.4,467.3 L481.8,463.7 L580.1,458.8
+		L678.4,467.7 L776.7,463.7 L875.0,467.3  '/>	<g transform="translate(88.5,476.1)" stroke="none" fill="rgb(0,0,153)" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text>.</text>
 	</g>
-	<g transform="translate(167.2,471.6)" stroke="none" fill="rgb(0,0,153)" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<g transform="translate(186.8,474.3)" stroke="none" fill="rgb(0,0,153)" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text>.</text>
 	</g>
-	<g transform="translate(245.8,476.1)" stroke="none" fill="rgb(0,0,153)" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<g transform="translate(285.1,474.7)" stroke="none" fill="rgb(0,0,153)" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text>.</text>
 	</g>
-	<g transform="translate(324.5,474.3)" stroke="none" fill="rgb(0,0,153)" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<g transform="translate(383.4,471.2)" stroke="none" fill="rgb(0,0,153)" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text>.</text>
 	</g>
-	<g transform="translate(403.1,474.7)" stroke="none" fill="rgb(0,0,153)" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<g transform="translate(481.8,467.6)" stroke="none" fill="rgb(0,0,153)" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text>.</text>
 	</g>
-	<g transform="translate(481.8,471.2)" stroke="none" fill="rgb(0,0,153)" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<g transform="translate(580.1,462.7)" stroke="none" fill="rgb(0,0,153)" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text>.</text>
 	</g>
-	<g transform="translate(560.4,467.6)" stroke="none" fill="rgb(0,0,153)" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<g transform="translate(678.4,471.6)" stroke="none" fill="rgb(0,0,153)" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text>.</text>
 	</g>
-	<g transform="translate(639.1,462.7)" stroke="none" fill="rgb(0,0,153)" font-family="Arial" font-size="12.00"  text-anchor="middle">
-		<text>.</text>
-	</g>
-	<g transform="translate(717.7,471.6)" stroke="none" fill="rgb(0,0,153)" font-family="Arial" font-size="12.00"  text-anchor="middle">
-		<text>.</text>
-	</g>
-	<g transform="translate(796.3,467.6)" stroke="none" fill="rgb(0,0,153)" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<g transform="translate(776.7,467.6)" stroke="none" fill="rgb(0,0,153)" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text>.</text>
 	</g>
 	<g transform="translate(875.0,471.2)" stroke="none" fill="rgb(0,0,153)" font-family="Arial" font-size="12.00"  text-anchor="middle">
@@ -500,35 +444,29 @@
 	</g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="3.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='rgb(153,   0, 153)'  d='M121.7,180.1 L163.9,180.1 M88.5,453.2 L167.2,459.4 L245.8,460.8 L324.5,464.3 L403.1,462.5 L481.8,481.9
-		L560.4,471.9 L639.1,481.5 L717.7,486.7 L796.3,490.2 L875.0,489.1  '/>	<g transform="translate(88.5,457.1)" stroke="none" fill="rgb(153,0,153)" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<path stroke='rgb(153,   0, 153)'  d='M121.7,180.1 L163.9,180.1 M88.5,460.8 L186.8,464.3 L285.1,462.5 L383.4,481.9 L481.8,471.9 L580.1,481.5
+		L678.4,486.7 L776.7,490.2 L875.0,489.1  '/>	<g transform="translate(88.5,464.7)" stroke="none" fill="rgb(153,0,153)" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text>.</text>
 	</g>
-	<g transform="translate(167.2,463.3)" stroke="none" fill="rgb(153,0,153)" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<g transform="translate(186.8,468.2)" stroke="none" fill="rgb(153,0,153)" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text>.</text>
 	</g>
-	<g transform="translate(245.8,464.7)" stroke="none" fill="rgb(153,0,153)" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<g transform="translate(285.1,466.4)" stroke="none" fill="rgb(153,0,153)" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text>.</text>
 	</g>
-	<g transform="translate(324.5,468.2)" stroke="none" fill="rgb(153,0,153)" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<g transform="translate(383.4,485.8)" stroke="none" fill="rgb(153,0,153)" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text>.</text>
 	</g>
-	<g transform="translate(403.1,466.4)" stroke="none" fill="rgb(153,0,153)" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<g transform="translate(481.8,475.8)" stroke="none" fill="rgb(153,0,153)" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text>.</text>
 	</g>
-	<g transform="translate(481.8,485.8)" stroke="none" fill="rgb(153,0,153)" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<g transform="translate(580.1,485.4)" stroke="none" fill="rgb(153,0,153)" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text>.</text>
 	</g>
-	<g transform="translate(560.4,475.8)" stroke="none" fill="rgb(153,0,153)" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<g transform="translate(678.4,490.6)" stroke="none" fill="rgb(153,0,153)" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text>.</text>
 	</g>
-	<g transform="translate(639.1,485.4)" stroke="none" fill="rgb(153,0,153)" font-family="Arial" font-size="12.00"  text-anchor="middle">
-		<text>.</text>
-	</g>
-	<g transform="translate(717.7,490.6)" stroke="none" fill="rgb(153,0,153)" font-family="Arial" font-size="12.00"  text-anchor="middle">
-		<text>.</text>
-	</g>
-	<g transform="translate(796.3,494.1)" stroke="none" fill="rgb(153,0,153)" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<g transform="translate(776.7,494.1)" stroke="none" fill="rgb(153,0,153)" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text>.</text>
 	</g>
 	<g transform="translate(875.0,493.0)" stroke="none" fill="rgb(153,0,153)" font-family="Arial" font-size="12.00"  text-anchor="middle">
@@ -546,35 +484,29 @@
 	</g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="3.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='rgb(255, 160, 160)'  d='M121.7,198.1 L163.9,198.1 M88.5,467.2 L167.2,474.5 L245.8,468.7 L324.5,465.7 L403.1,462.8 L481.8,459.9
-		L560.4,461.4 L639.1,457.0 L717.7,451.1 L796.3,459.9 L875.0,465.7  '/>	<g transform="translate(88.5,471.1)" stroke="none" fill="rgb(255,160,160)" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<path stroke='rgb(255, 160, 160)'  d='M121.7,198.1 L163.9,198.1 M88.5,468.7 L186.8,465.7 L285.1,462.8 L383.4,459.9 L481.8,461.4 L580.1,457.0
+		L678.4,451.1 L776.7,459.9 L875.0,465.7  '/>	<g transform="translate(88.5,472.6)" stroke="none" fill="rgb(255,160,160)" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text>.</text>
 	</g>
-	<g transform="translate(167.2,478.4)" stroke="none" fill="rgb(255,160,160)" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<g transform="translate(186.8,469.6)" stroke="none" fill="rgb(255,160,160)" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text>.</text>
 	</g>
-	<g transform="translate(245.8,472.6)" stroke="none" fill="rgb(255,160,160)" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<g transform="translate(285.1,466.7)" stroke="none" fill="rgb(255,160,160)" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text>.</text>
 	</g>
-	<g transform="translate(324.5,469.6)" stroke="none" fill="rgb(255,160,160)" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<g transform="translate(383.4,463.8)" stroke="none" fill="rgb(255,160,160)" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text>.</text>
 	</g>
-	<g transform="translate(403.1,466.7)" stroke="none" fill="rgb(255,160,160)" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<g transform="translate(481.8,465.3)" stroke="none" fill="rgb(255,160,160)" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text>.</text>
 	</g>
-	<g transform="translate(481.8,463.8)" stroke="none" fill="rgb(255,160,160)" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<g transform="translate(580.1,460.9)" stroke="none" fill="rgb(255,160,160)" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text>.</text>
 	</g>
-	<g transform="translate(560.4,465.3)" stroke="none" fill="rgb(255,160,160)" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<g transform="translate(678.4,455.0)" stroke="none" fill="rgb(255,160,160)" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text>.</text>
 	</g>
-	<g transform="translate(639.1,460.9)" stroke="none" fill="rgb(255,160,160)" font-family="Arial" font-size="12.00"  text-anchor="middle">
-		<text>.</text>
-	</g>
-	<g transform="translate(717.7,455.0)" stroke="none" fill="rgb(255,160,160)" font-family="Arial" font-size="12.00"  text-anchor="middle">
-		<text>.</text>
-	</g>
-	<g transform="translate(796.3,463.8)" stroke="none" fill="rgb(255,160,160)" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<g transform="translate(776.7,463.8)" stroke="none" fill="rgb(255,160,160)" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text>.</text>
 	</g>
 	<g transform="translate(875.0,469.6)" stroke="none" fill="rgb(255,160,160)" font-family="Arial" font-size="12.00"  text-anchor="middle">
@@ -592,35 +524,29 @@
 	</g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="3.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='rgb(  0, 255, 193)'  d='M121.7,216.1 L163.9,216.1 M88.5,465.4 L167.2,471.8 L245.8,472.3 L324.5,474.1 L403.1,476.5 L481.8,501.2
-		L560.4,521.4 L639.1,542.4 L717.7,435.0 L796.3,449.2 L875.0,464.9  '/>	<g transform="translate(88.5,469.3)" stroke="none" fill="rgb(0,255,193)" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<path stroke='rgb(  0, 255, 193)'  d='M121.7,216.1 L163.9,216.1 M88.5,472.3 L186.8,474.1 L285.1,476.5 L383.4,501.2 L481.8,521.4 L580.1,542.4
+		L678.4,435.0 L776.7,449.2 L875.0,464.9  '/>	<g transform="translate(88.5,476.2)" stroke="none" fill="rgb(0,255,193)" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text>.</text>
 	</g>
-	<g transform="translate(167.2,475.7)" stroke="none" fill="rgb(0,255,193)" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<g transform="translate(186.8,478.0)" stroke="none" fill="rgb(0,255,193)" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text>.</text>
 	</g>
-	<g transform="translate(245.8,476.2)" stroke="none" fill="rgb(0,255,193)" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<g transform="translate(285.1,480.4)" stroke="none" fill="rgb(0,255,193)" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text>.</text>
 	</g>
-	<g transform="translate(324.5,478.0)" stroke="none" fill="rgb(0,255,193)" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<g transform="translate(383.4,505.1)" stroke="none" fill="rgb(0,255,193)" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text>.</text>
 	</g>
-	<g transform="translate(403.1,480.4)" stroke="none" fill="rgb(0,255,193)" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<g transform="translate(481.8,525.3)" stroke="none" fill="rgb(0,255,193)" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text>.</text>
 	</g>
-	<g transform="translate(481.8,505.1)" stroke="none" fill="rgb(0,255,193)" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<g transform="translate(580.1,546.3)" stroke="none" fill="rgb(0,255,193)" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text>.</text>
 	</g>
-	<g transform="translate(560.4,525.3)" stroke="none" fill="rgb(0,255,193)" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<g transform="translate(678.4,438.9)" stroke="none" fill="rgb(0,255,193)" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text>.</text>
 	</g>
-	<g transform="translate(639.1,546.3)" stroke="none" fill="rgb(0,255,193)" font-family="Arial" font-size="12.00"  text-anchor="middle">
-		<text>.</text>
-	</g>
-	<g transform="translate(717.7,438.9)" stroke="none" fill="rgb(0,255,193)" font-family="Arial" font-size="12.00"  text-anchor="middle">
-		<text>.</text>
-	</g>
-	<g transform="translate(796.3,453.1)" stroke="none" fill="rgb(0,255,193)" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<g transform="translate(776.7,453.1)" stroke="none" fill="rgb(0,255,193)" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text>.</text>
 	</g>
 	<g transform="translate(875.0,468.8)" stroke="none" fill="rgb(0,255,193)" font-family="Arial" font-size="12.00"  text-anchor="middle">
@@ -638,35 +564,29 @@
 	</g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="3.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='rgb(  0, 193, 255)'  d='M121.7,234.1 L163.9,234.1 M88.5,428.7 L167.2,443.0 L245.8,456.1 L324.5,477.6 L403.1,463.3 L481.8,469.9
-		L560.4,468.1 L639.1,471.1 L717.7,468.1 L796.3,468.7 L875.0,466.9  '/>	<g transform="translate(88.5,432.6)" stroke="none" fill="rgb(0,193,255)" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<path stroke='rgb(  0, 193, 255)'  d='M121.7,234.1 L163.9,234.1 M88.5,456.1 L186.8,477.6 L285.1,463.3 L383.4,469.9 L481.8,468.1 L580.1,471.1
+		L678.4,468.1 L776.7,468.7 L875.0,466.9  '/>	<g transform="translate(88.5,460.0)" stroke="none" fill="rgb(0,193,255)" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text>.</text>
 	</g>
-	<g transform="translate(167.2,446.9)" stroke="none" fill="rgb(0,193,255)" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<g transform="translate(186.8,481.5)" stroke="none" fill="rgb(0,193,255)" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text>.</text>
 	</g>
-	<g transform="translate(245.8,460.0)" stroke="none" fill="rgb(0,193,255)" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<g transform="translate(285.1,467.2)" stroke="none" fill="rgb(0,193,255)" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text>.</text>
 	</g>
-	<g transform="translate(324.5,481.5)" stroke="none" fill="rgb(0,193,255)" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<g transform="translate(383.4,473.8)" stroke="none" fill="rgb(0,193,255)" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text>.</text>
 	</g>
-	<g transform="translate(403.1,467.2)" stroke="none" fill="rgb(0,193,255)" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<g transform="translate(481.8,472.0)" stroke="none" fill="rgb(0,193,255)" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text>.</text>
 	</g>
-	<g transform="translate(481.8,473.8)" stroke="none" fill="rgb(0,193,255)" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<g transform="translate(580.1,475.0)" stroke="none" fill="rgb(0,193,255)" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text>.</text>
 	</g>
-	<g transform="translate(560.4,472.0)" stroke="none" fill="rgb(0,193,255)" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<g transform="translate(678.4,472.0)" stroke="none" fill="rgb(0,193,255)" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text>.</text>
 	</g>
-	<g transform="translate(639.1,475.0)" stroke="none" fill="rgb(0,193,255)" font-family="Arial" font-size="12.00"  text-anchor="middle">
-		<text>.</text>
-	</g>
-	<g transform="translate(717.7,472.0)" stroke="none" fill="rgb(0,193,255)" font-family="Arial" font-size="12.00"  text-anchor="middle">
-		<text>.</text>
-	</g>
-	<g transform="translate(796.3,472.6)" stroke="none" fill="rgb(0,193,255)" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<g transform="translate(776.7,472.6)" stroke="none" fill="rgb(0,193,255)" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text>.</text>
 	</g>
 	<g transform="translate(875.0,470.8)" stroke="none" fill="rgb(0,193,255)" font-family="Arial" font-size="12.00"  text-anchor="middle">
@@ -684,35 +604,29 @@
 	</g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="3.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='rgb(255,   9, 153)'  d='M121.7,252.1 L163.9,252.1 M88.5,444.7 L167.2,432.2 L245.8,438.9 L324.5,431.8 L403.1,432.3 L481.8,428.4
-		L560.4,432.8 L639.1,431.8 L717.7,435.4 L796.3,428.1 L875.0,440.0  '/>	<g transform="translate(88.5,448.6)" stroke="none" fill="rgb(255,9,153)" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<path stroke='rgb(255,   9, 153)'  d='M121.7,252.1 L163.9,252.1 M88.5,438.9 L186.8,431.8 L285.1,432.3 L383.4,428.4 L481.8,432.8 L580.1,431.8
+		L678.4,435.4 L776.7,428.1 L875.0,440.0  '/>	<g transform="translate(88.5,442.8)" stroke="none" fill="rgb(255,9,153)" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text>.</text>
 	</g>
-	<g transform="translate(167.2,436.1)" stroke="none" fill="rgb(255,9,153)" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<g transform="translate(186.8,435.7)" stroke="none" fill="rgb(255,9,153)" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text>.</text>
 	</g>
-	<g transform="translate(245.8,442.8)" stroke="none" fill="rgb(255,9,153)" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<g transform="translate(285.1,436.2)" stroke="none" fill="rgb(255,9,153)" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text>.</text>
 	</g>
-	<g transform="translate(324.5,435.7)" stroke="none" fill="rgb(255,9,153)" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<g transform="translate(383.4,432.3)" stroke="none" fill="rgb(255,9,153)" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text>.</text>
 	</g>
-	<g transform="translate(403.1,436.2)" stroke="none" fill="rgb(255,9,153)" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<g transform="translate(481.8,436.7)" stroke="none" fill="rgb(255,9,153)" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text>.</text>
 	</g>
-	<g transform="translate(481.8,432.3)" stroke="none" fill="rgb(255,9,153)" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<g transform="translate(580.1,435.7)" stroke="none" fill="rgb(255,9,153)" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text>.</text>
 	</g>
-	<g transform="translate(560.4,436.7)" stroke="none" fill="rgb(255,9,153)" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<g transform="translate(678.4,439.3)" stroke="none" fill="rgb(255,9,153)" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text>.</text>
 	</g>
-	<g transform="translate(639.1,435.7)" stroke="none" fill="rgb(255,9,153)" font-family="Arial" font-size="12.00"  text-anchor="middle">
-		<text>.</text>
-	</g>
-	<g transform="translate(717.7,439.3)" stroke="none" fill="rgb(255,9,153)" font-family="Arial" font-size="12.00"  text-anchor="middle">
-		<text>.</text>
-	</g>
-	<g transform="translate(796.3,432.0)" stroke="none" fill="rgb(255,9,153)" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<g transform="translate(776.7,432.0)" stroke="none" fill="rgb(255,9,153)" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text>.</text>
 	</g>
 	<g transform="translate(875.0,443.9)" stroke="none" fill="rgb(255,9,153)" font-family="Arial" font-size="12.00"  text-anchor="middle">
@@ -730,35 +644,29 @@
 	</g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="3.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='rgb(128, 192, 128)'  d='M121.7,270.1 L163.9,270.1 M88.5,286.4 L167.2,205.2 L245.8,174.2 L324.5,161.3 L403.1,133.9 L481.8,138.3
-		L560.4,54.1 L639.1,99.1 L717.7,157.7 L796.3,191.5 L875.0,224.9  '/>	<g transform="translate(88.5,290.3)" stroke="none" fill="rgb(128,192,128)" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<path stroke='rgb(128, 192, 128)'  d='M121.7,270.1 L163.9,270.1 M88.5,174.2 L186.8,161.3 L285.1,133.9 L383.4,138.3 L481.8,54.1 L580.1,99.1
+		L678.4,157.7 L776.7,191.5 L875.0,224.9  '/>	<g transform="translate(88.5,178.1)" stroke="none" fill="rgb(128,192,128)" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text>.</text>
 	</g>
-	<g transform="translate(167.2,209.1)" stroke="none" fill="rgb(128,192,128)" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<g transform="translate(186.8,165.2)" stroke="none" fill="rgb(128,192,128)" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text>.</text>
 	</g>
-	<g transform="translate(245.8,178.1)" stroke="none" fill="rgb(128,192,128)" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<g transform="translate(285.1,137.8)" stroke="none" fill="rgb(128,192,128)" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text>.</text>
 	</g>
-	<g transform="translate(324.5,165.2)" stroke="none" fill="rgb(128,192,128)" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<g transform="translate(383.4,142.2)" stroke="none" fill="rgb(128,192,128)" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text>.</text>
 	</g>
-	<g transform="translate(403.1,137.8)" stroke="none" fill="rgb(128,192,128)" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<g transform="translate(481.8,58.0)" stroke="none" fill="rgb(128,192,128)" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text>.</text>
 	</g>
-	<g transform="translate(481.8,142.2)" stroke="none" fill="rgb(128,192,128)" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<g transform="translate(580.1,103.0)" stroke="none" fill="rgb(128,192,128)" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text>.</text>
 	</g>
-	<g transform="translate(560.4,58.0)" stroke="none" fill="rgb(128,192,128)" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<g transform="translate(678.4,161.6)" stroke="none" fill="rgb(128,192,128)" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text>.</text>
 	</g>
-	<g transform="translate(639.1,103.0)" stroke="none" fill="rgb(128,192,128)" font-family="Arial" font-size="12.00"  text-anchor="middle">
-		<text>.</text>
-	</g>
-	<g transform="translate(717.7,161.6)" stroke="none" fill="rgb(128,192,128)" font-family="Arial" font-size="12.00"  text-anchor="middle">
-		<text>.</text>
-	</g>
-	<g transform="translate(796.3,195.4)" stroke="none" fill="rgb(128,192,128)" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<g transform="translate(776.7,195.4)" stroke="none" fill="rgb(128,192,128)" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text>.</text>
 	</g>
 	<g transform="translate(875.0,228.8)" stroke="none" fill="rgb(128,192,128)" font-family="Arial" font-size="12.00"  text-anchor="middle">
@@ -776,35 +684,29 @@
 	</g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="3.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='rgb(144,  80,  16)'  d='M121.7,288.1 L163.9,288.1 M88.5,460.3 L167.2,463.4 L245.8,466.4 L324.5,468.6 L403.1,468.5 L481.8,473.3
-		L560.4,473.3 L639.1,486.3 L717.7,485.6 L796.3,487.2 L875.0,489.2  '/>	<g transform="translate(88.5,464.2)" stroke="none" fill="rgb(144,80,16)" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<path stroke='rgb(144,  80,  16)'  d='M121.7,288.1 L163.9,288.1 M88.5,466.4 L186.8,468.6 L285.1,468.5 L383.4,473.3 L481.8,473.3 L580.1,486.3
+		L678.4,485.6 L776.7,487.2 L875.0,489.2  '/>	<g transform="translate(88.5,470.3)" stroke="none" fill="rgb(144,80,16)" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text>.</text>
 	</g>
-	<g transform="translate(167.2,467.3)" stroke="none" fill="rgb(144,80,16)" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<g transform="translate(186.8,472.5)" stroke="none" fill="rgb(144,80,16)" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text>.</text>
 	</g>
-	<g transform="translate(245.8,470.3)" stroke="none" fill="rgb(144,80,16)" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<g transform="translate(285.1,472.4)" stroke="none" fill="rgb(144,80,16)" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text>.</text>
 	</g>
-	<g transform="translate(324.5,472.5)" stroke="none" fill="rgb(144,80,16)" font-family="Arial" font-size="12.00"  text-anchor="middle">
-		<text>.</text>
-	</g>
-	<g transform="translate(403.1,472.4)" stroke="none" fill="rgb(144,80,16)" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<g transform="translate(383.4,477.2)" stroke="none" fill="rgb(144,80,16)" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text>.</text>
 	</g>
 	<g transform="translate(481.8,477.2)" stroke="none" fill="rgb(144,80,16)" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text>.</text>
 	</g>
-	<g transform="translate(560.4,477.2)" stroke="none" fill="rgb(144,80,16)" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<g transform="translate(580.1,490.2)" stroke="none" fill="rgb(144,80,16)" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text>.</text>
 	</g>
-	<g transform="translate(639.1,490.2)" stroke="none" fill="rgb(144,80,16)" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<g transform="translate(678.4,489.5)" stroke="none" fill="rgb(144,80,16)" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text>.</text>
 	</g>
-	<g transform="translate(717.7,489.5)" stroke="none" fill="rgb(144,80,16)" font-family="Arial" font-size="12.00"  text-anchor="middle">
-		<text>.</text>
-	</g>
-	<g transform="translate(796.3,491.1)" stroke="none" fill="rgb(144,80,16)" font-family="Arial" font-size="12.00"  text-anchor="middle">
+	<g transform="translate(776.7,491.1)" stroke="none" fill="rgb(144,80,16)" font-family="Arial" font-size="12.00"  text-anchor="middle">
 		<text>.</text>
 	</g>
 	<g transform="translate(875.0,493.1)" stroke="none" fill="rgb(144,80,16)" font-family="Arial" font-size="12.00"  text-anchor="middle">
