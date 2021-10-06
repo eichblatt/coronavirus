@@ -64,4 +64,4 @@ US Population and non-covid death rates from [the US census website](https://www
 World Population and covid death rates from [Our World In Data](https://ourworldindata.org/covid-deaths)
 
 
-Report Updated at 2021.10.04 08:46:31 EST
+Report Updated at 2021.10.06 10:30:35 EST
